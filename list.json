@@ -1,0 +1,2046 @@
+{
+    "listtwo": [
+        {
+            "number": "1",
+            "root": "dubi/dubit",
+            "definition": "doubt" 
+        },
+        {
+            "number": "2",
+            "root": "_osis",
+            "definition": "disease/condition of (disorder/abnormality)" 
+        },
+        {
+            "number": "3",
+            "root": "line",
+            "definition": "line" 
+        },
+        {
+            "number": "4",
+            "root": "aqu/aqua",
+            "definition": "water" 
+        },
+        {
+            "number": "5",
+            "root": "_acious",
+            "definition": "foil of (HTDW/having)" 
+        },
+        {
+            "number": "6",
+            "root": "carn/carni",
+            "definition": "flesh (meat)" 
+        },
+        {
+            "number": "7",
+            "root": "vor",
+            "definition": "devour (feed/gorge)" 
+        },
+        {
+            "number": "8",
+            "root": "dia_",
+            "definition": "through (across)" 
+        },
+        {
+            "number": "9",
+            "root": "syn/sym",
+            "definition": "same/together" 
+        },
+        {
+            "number": "10",
+            "root": "noc/nocu/noxi",
+            "definition": "harm" 
+        },
+        {
+            "number": "11",
+            "root": "cid/cide",
+            "definition": "kill/killing" 
+        },
+        {
+            "number": "12",
+            "root": "odont/odonto",
+            "definition": "tooth" 
+        },
+        {
+            "number": "13",
+            "root": "tain",
+            "definition": "hold (reach)" 
+        },
+        {
+            "number": "14",
+            "root": "kinesi/kinesis",
+            "definition": "movement (motion)" 
+        },
+        {
+            "number": "15",
+            "root": "jac",
+            "definition": "lie (situate)" 
+        },
+        {
+            "number": "16",
+            "root": "pachy",
+            "definition": "thick (hard)" 
+        },
+        {
+            "number": "17",
+            "root": "apo",
+            "definition": "away from (apart/off/remove from)" 
+        },
+        {
+            "number": "18",
+            "root": "viv/vivi",
+            "definition": "alive (live/life)" 
+        },
+        {
+            "number": "19",
+            "root": "col_",
+            "definition": "with/together" 
+        },
+        {
+            "number": "20",
+            "root": "debil",
+            "definition": "weak (weaken)" 
+        },
+        {
+            "number": "21",
+            "root": "pos/pose",
+            "definition": "put (place)" 
+        },
+        {
+            "number": "22",
+            "root": "celer",
+            "definition": "speed" 
+        },
+        {
+            "number": "23",
+            "root": "geront/geronto",
+            "definition": "old person (old age)" 
+        },
+        {
+            "number": "24",
+            "root": "acri/acrid",
+            "definition": "bitter (sharp/sting - of eyes/nose/skin/etc.)" 
+        },
+        {
+            "number": "25",
+            "root": "pauci",
+            "definition": "few (scarce/little)" 
+        },
+        {
+            "number": "26",
+            "root": "bene",
+            "definition": "good/well" 
+        },
+        {
+            "number": "27",
+            "root": "magn/magni/magna",
+            "definition": "great (big)" 
+        },
+        {
+            "number": "28",
+            "root": "scend/scent/scens",
+            "definition": "climb (go)" 
+        },
+        {
+            "number": "29",
+            "root": "icon/icono",
+            "definition": "religious objects" 
+        },
+        {
+            "number": "30",
+            "root": "ceiv/ceive",
+            "definition": "take" 
+        },
+        {
+            "number": "31",
+            "root": "err/erra",
+            "definition": "wander (make mistakes/ blunder/ stray)" 
+        },
+        {
+            "number": "32",
+            "root": "mal/male_",
+            "definition": "bad/wrong (evil/badly/poorly)" 
+        },
+        {
+            "number": "33",
+            "root": "tra_",
+            "definition": "through (beyond/across)" 
+        },
+        {
+            "number": "34",
+            "root": "greg",
+            "definition": "crowd/flock (group/herd/gather/add)" 
+        },
+        {
+            "number": "35",
+            "root": "trache/tracheo",
+            "definition": "windpipe" 
+        },
+        {
+            "number": "36",
+            "root": "pseud/pseudo",
+            "definition": "false" 
+        },
+        {
+            "number": "37",
+            "root": "vacill",
+            "definition": "waver (sway)" 
+        },
+        {
+            "number": "38",
+            "root": "dicho",
+            "definition": "in two (twice)" 
+        },
+        {
+            "number": "39",
+            "root": "_ward/wards",
+            "definition": "toward (direction of)" 
+        },
+        {
+            "number": "40",
+            "root": "lumin/lumine",
+            "definition": "light (shine)" 
+        },
+        {
+            "number": "41",
+            "root": "super",
+            "definition": "over (above/beyond/great)" 
+        },
+        {
+            "number": "42",
+            "root": "gest",
+            "definition": "carry (bear)" 
+        },
+        {
+            "number": "43",
+            "root": "pater/patr/patro/partri",
+            "definition": "father" 
+        },
+        {
+            "number": "44",
+            "root": "mater/matr/matri/matro/metro",
+            "definition": "mother" 
+        },
+        {
+            "number": "45",
+            "root": "genu",
+            "definition": "knee (Joint)" 
+        },
+        {
+            "number": "46",
+            "root": "xeno",
+            "definition": "foreigner (stranger/foreign)" 
+        },
+        {
+            "number": "47",
+            "root": "pugn/pugna",
+            "definition": "fight (attack)" 
+        },
+        {
+            "number": "48",
+            "root": "_dox/doxy",
+            "definition": "opinion (thinking/believing)" 
+        },
+        {
+            "number": "49",
+            "root": "plen/pleni/plente/plenti",
+            "definition": "full (fill)" 
+        },
+        {
+            "number": "50",
+            "root": "dei",
+            "definition": "god" 
+        },
+        {
+            "number": "51",
+            "root": "nephr/nephro",
+            "definition": "kidney" 
+        },
+        {
+            "number": "52",
+            "root": "exo",
+            "definition": "outside (outer/outside of)" 
+        },
+        {
+            "number": "53",
+            "root": "_ial",
+            "definition": "having to do with (having/_ing/being)" 
+        },
+        {
+            "number": "54",
+            "root": "equ/equi",
+            "definition": "even (same)" 
+        },
+        {
+            "number": "55",
+            "root": "fac/fact/fic/ific",
+            "definition": "make (do)" 
+        },
+        {
+            "number": "56",
+            "root": "secular",
+            "definition": "worldly" 
+        },
+        {
+            "number": "57",
+            "root": "fin/fine",
+            "definition": "end (limit)" 
+        },
+        {
+            "number": "58",
+            "root": "plet/plete",
+            "definition": "fill (full)" 
+        },
+        {
+            "number": "59",
+            "root": "ornith/ornitho",
+            "definition": "bird" 
+        },
+        {
+            "number": "60",
+            "root": "clud/clude/clus/cluse",
+            "definition": "shut (close)" 
+        },
+        {
+            "number": "61",
+            "root": "nil/nihil",
+            "definition": "nothing (wipe out)" 
+        },
+        {
+            "number": "62",
+            "root": "ac_",
+            "definition": "to (toward/against/on/in)" 
+        },
+        {
+            "number": "63",
+            "root": "contra/contro",
+            "definition": "against (opposite)" 
+        },
+        {
+            "number": "64",
+            "root": "demi",
+            "definition": "half (partly)" 
+        },
+        {
+            "number": "65",
+            "root": "jug",
+            "definition": "join (unite/yoke/conquer)" 
+        },
+        {
+            "number": "66",
+            "root": "di_",
+            "definition": "away (apart/from)" 
+        },
+        {
+            "number": "67",
+            "root": "di_",
+            "definition": "two/second (twice)" 
+        },
+        {
+            "number": "68",
+            "root": "_arch",
+            "definition": "ruler" 
+        },
+        {
+            "number": "69",
+            "root": "arch_",
+            "definition": "chief" 
+        },
+        {
+            "number": "70",
+            "root": "_archy",
+            "definition": "government by (ruled by)" 
+        },
+        {
+            "number": "71",
+            "root": "orth/ortho",
+            "definition": "correct (straight)" 
+        },
+        {
+            "number": "72",
+            "root": "ign/igni/ignit",
+            "definition": "fire" 
+        },
+        {
+            "number": "73",
+            "root": "cur/curr/curs",
+            "definition": "run" 
+        },
+        {
+            "number": "74",
+            "root": "mega/megalo/megaly",
+            "definition": "large (huge/one million/grandeur)" 
+        },
+        {
+            "number": "75",
+            "root": "an_",
+            "definition": "to (toward/on/in/against)" 
+        },
+        {
+            "number": "76",
+            "root": "moni",
+            "definition": "warn" 
+        },
+        {
+            "number": "77",
+            "root": "endo_",
+            "definition": "inside (within)" 
+        },
+        {
+            "number": "78",
+            "root": "ophthalm/ophthalmo",
+            "definition": "eye" 
+        },
+        {
+            "number": "79",
+            "root": "_an/ian",
+            "definition": "specialist in" 
+        },
+        {
+            "number": "80",
+            "root": "_an/ian",
+            "definition": "native of" 
+        },
+        {
+            "number": "81",
+            "root": "vers",
+            "definition": "turn" 
+        },
+        {
+            "number": "82",
+            "root": "op_",
+            "definition": "against (opposite)" 
+        },
+        {
+            "number": "83",
+            "root": "_ness",
+            "definition": "being" 
+        },
+        {
+            "number": "84",
+            "root": "sec/sect",
+            "definition": "cut" 
+        },
+        {
+            "number": "85",
+            "root": "nul/null",
+            "definition": "nothing (void/not)" 
+        },
+        {
+            "number": "86",
+            "root": "post_",
+            "definition": "after" 
+        },
+        {
+            "number": "87",
+            "root": "_later",
+            "definition": "worshiper (one who adores)" 
+        },
+        {
+            "number": "88",
+            "root": "ambul/amble",
+            "definition": "walk" 
+        },
+        {
+            "number": "89",
+            "root": "not/nota/note",
+            "definition": "note (mark)" 
+        },
+        {
+            "number": "90",
+            "root": "dif_",
+            "definition": "apart (away from/aside)" 
+        },
+        {
+            "number": "91",
+            "root": "scrib/script",
+            "definition": "write" 
+        },
+        {
+            "number": "92",
+            "root": "_ure",
+            "definition": "_ing (being)" 
+        },
+        {
+            "number": "93",
+            "root": "secu/sequ",
+            "definition": "follow" 
+        },
+        {
+            "number": "94",
+            "root": "tract",
+            "definition": "draw (drag/pull/lead)" 
+        },
+        {
+            "number": "95",
+            "root": "dys_",
+            "definition": "bad (difficult/abnormal/defective)" 
+        },
+        {
+            "number": "96",
+            "root": "cogit",
+            "definition": "think" 
+        },
+        {
+            "number": "97",
+            "root": "tetra/tetr",
+            "definition": "four" 
+        },
+        {
+            "number": "98",
+            "root": "ab/abs_",
+            "definition": "away (from/off)" 
+        },
+        {
+            "number": "99",
+            "root": "hes/her/here",
+            "definition": "stick" 
+        },
+        {
+            "number": "100",
+            "root": "_fold",
+            "definition": "times" 
+        },
+        {
+            "number": "101",
+            "root": "crani/cranio",
+            "definition": "skull" 
+        },
+        {
+            "number": "102",
+            "root": "matur/mature",
+            "definition": "ripe (ripen)" 
+        },
+        {
+            "number": "103",
+            "root": "pan/panto_",
+            "definition": "all" 
+        },
+        {
+            "number": "104",
+            "root": "syn/sym",
+            "definition": "same (similar)" 
+        },
+        {
+            "number": "105",
+            "root": "de_",
+            "definition": "away (down/not/from/remove/take away)" 
+        },
+        {
+            "number": "106",
+            "root": "hema/hemo/hemato",
+            "definition": "blood" 
+        },
+        {
+            "number": "107",
+            "root": "phil/philo",
+            "definition": "love" 
+        },
+        {
+            "number": "108",
+            "root": "press",
+            "definition": "press" 
+        },
+        {
+            "number": "109",
+            "root": "_ate",
+            "definition": "(v) - to make (become/produce/to) (adj) - HTDW/having/full of/resembling (n) - office/title/made from - chemical (condition)" 
+        },
+        {
+            "number": "110",
+            "root": "tom/tomo/tomy",
+            "definition": "cut/cutting" 
+        },
+        {
+            "number": "111",
+            "root": "pro",
+            "definition": "forward (forth/before/beforehand)" 
+        },
+        {
+            "number": "112",
+            "root": "pro",
+            "definition": "in favor of (for someone/something/cause)" 
+        },
+        {
+            "number": "113",
+            "root": "biblio",
+            "definition": "book" 
+        },
+        {
+            "number": "114",
+            "root": "cept",
+            "definition": "take (seize)" 
+        },
+        {
+            "number": "115",
+            "root": "omni",
+            "definition": "all (everything)" 
+        },
+        {
+            "number": "116",
+            "root": "migr/migra",
+            "definition": "move" 
+        },
+        {
+            "number": "117",
+            "root": "com_",
+            "definition": "with/together (completely)" 
+        },
+        {
+            "number": "118",
+            "root": "ject",
+            "definition": "throw/hurl" 
+        },
+        {
+            "number": "119",
+            "root": "enter/entero",
+            "definition": "intestine" 
+        },
+        {
+            "number": "120",
+            "root": "locu/loqu/loquy",
+            "definition": "speak (talk)" 
+        },
+        {
+            "number": "121",
+            "root": "peri_",
+            "definition": "around (near/boundary/surround)" 
+        },
+        {
+            "number": "122",
+            "root": "a/an_",
+            "definition": "in/on (to/toward)" 
+        },
+        {
+            "number": "123",
+            "root": "a/an_",
+            "definition": "no/not (lacking/without)" 
+        },
+        {
+            "number": "124",
+            "root": "miso_",
+            "definition": "hate (hatred/hating)" 
+        },
+        {
+            "number": "125",
+            "root": "_scope",
+            "definition": "viewing device (an instrument to see)" 
+        },
+        {
+            "number": "126",
+            "root": "_ize",
+            "definition": "to make (become/produce/to)" 
+        },
+        {
+            "number": "127",
+            "root": "path/pathy/patho",
+            "definition": "disease/suffering (abnormality/disorder)" 
+        },
+        {
+            "number": "128",
+            "root": "path/pathy/pathe",
+            "definition": "feeling/suffering" 
+        },
+        {
+            "number": "129",
+            "root": "latr/latry",
+            "definition": "worship (adoration)" 
+        },
+        {
+            "number": "130",
+            "root": "sci",
+            "definition": "know (aware/knowledge)" 
+        },
+        {
+            "number": "131",
+            "root": "intra/intro_",
+            "definition": "within (inside)" 
+        },
+        {
+            "number": "132",
+            "root": "trans/tran",
+            "definition": "across (through/beyond/over/pass/change)" 
+        },
+        {
+            "number": "133",
+            "root": "hyper",
+            "definition": "over/excessive (too much/beyond)" 
+        },
+        {
+            "number": "134",
+            "root": "quadr/quadri/quadru",
+            "definition": "four (square)" 
+        },
+        {
+            "number": "135",
+            "root": "labor",
+            "definition": "work" 
+        },
+        {
+            "number": "136",
+            "root": "gress",
+            "definition": "go (walk/step)" 
+        },
+        {
+            "number": "137",
+            "root": "ichthy/ichthyo",
+            "definition": "fish" 
+        },
+        {
+            "number": "138",
+            "root": "radi/radio",
+            "definition": "ray (light/X-ray/light energy)" 
+        },
+        {
+            "number": "139",
+            "root": "xero",
+            "definition": "dry" 
+        },
+        {
+            "number": "140",
+            "root": "flex/fleet",
+            "definition": "bend (curve)" 
+        },
+        {
+            "number": "141",
+            "root": "per_",
+            "definition": "through (throughout/by)" 
+        },
+        {
+            "number": "142",
+            "root": "ob_",
+            "definition": "against (toward/over/completely/up)" 
+        },
+        {
+            "number": "143",
+            "root": "fer/ferr",
+            "definition": "carry (bear/produce/bring)" 
+        },
+        {
+            "number": "144",
+            "root": "gnos/gnost",
+            "definition": "know (person who knows/aware)" 
+        },
+        {
+            "number": "145",
+            "root": "gnosis/gnosia",
+            "definition": "knowing (knowledge/awareness/recognition)" 
+        },
+        {
+            "number": "146",
+            "root": "magnet/magneto",
+            "definition": "magnet" 
+        },
+        {
+            "number": "147",
+            "root": "extra/extro_",
+            "definition": "outside (out of/outer/beyond)" 
+        },
+        {
+            "number": "148",
+            "root": "arthr/arthro",
+            "definition": "j oint" 
+        },
+        {
+            "number": "149",
+            "root": "dis_",
+            "definition": "not/apart (away from/lack of/break apart)" 
+        },
+        {
+            "number": "150",
+            "root": "spher/sphere",
+            "definition": "globe (ball/circle)" 
+        },
+        {
+            "number": "151",
+            "root": "ven/veni/vent/vene",
+            "definition": "come" 
+        },
+        {
+            "number": "152",
+            "root": "somn/somni/somno",
+            "definition": "sleep" 
+        },
+        {
+            "number": "153",
+            "root": "_ish",
+            "definition": "somewhat/native of (like/being)" 
+        },
+        {
+            "number": "154",
+            "root": "gon",
+            "definition": "side (angle - when used with angles and numerals)" 
+        },
+        {
+            "number": "155",
+            "root": "rupt",
+            "definition": "break" 
+        },
+        {
+            "number": "156",
+            "root": "fits/fuse",
+            "definition": "pour (melt/spread)" 
+        },
+        {
+            "number": "157",
+            "root": "hemi_",
+            "definition": "half (partly)" 
+        },
+        {
+            "number": "158",
+            "root": "myo",
+            "definition": "muscle" 
+        },
+        {
+            "number": "159",
+            "root": "cogn/cognosc",
+            "definition": "aware (know/knowledge)" 
+        },
+        {
+            "number": "160",
+            "root": "_ment",
+            "definition": "_ing(being__ed)" 
+        },
+        {
+            "number": "161",
+            "root": "pon/pone",
+            "definition": "put (place)" 
+        },
+        {
+            "number": "162",
+            "root": "medi/media",
+            "definition": "middle" 
+        },
+        {
+            "number": "163",
+            "root": "penta",
+            "definition": "five" 
+        },
+        {
+            "number": "164",
+            "root": "ible/able",
+            "definition": "able to" 
+        },
+        {
+            "number": "165",
+            "root": "ped/pod/pody",
+            "definition": "foot" 
+        },
+        {
+            "number": "166",
+            "root": "extra",
+            "definition": "beyond/outside" 
+        },
+        {
+            "number": "167",
+            "root": "tort",
+            "definition": "twist" 
+        },
+        {
+            "number": "168",
+            "root": "inter",
+            "definition": "between/among" 
+        },
+        {
+            "number": "169",
+            "root": "ion",
+            "definition": "_ing" 
+        },
+        {
+            "number": "170",
+            "root": "dur/dura",
+            "definition": "last/hard" 
+        },
+        {
+            "number": "171",
+            "root": "vox/voc/voci/voke",
+            "definition": "call/voice/speak" 
+        },
+        {
+            "number": "172",
+            "root": "circum",
+            "definition": "around" 
+        },
+        {
+            "number": "173",
+            "root": "mit/mitt",
+            "definition": "send (throw)" 
+        },
+        {
+            "number": "174",
+            "root": "vert",
+            "definition": "turn" 
+        },
+        {
+            "number": "175",
+            "root": "junct",
+            "definition": "connect/join" 
+        },
+        {
+            "number": "176",
+            "root": "e/ec",
+            "definition": "out/ out of" 
+        },
+        {
+            "number": "177",
+            "root": "chron/chrono",
+            "definition": "time" 
+        },
+        {
+            "number": "178",
+            "root": "bulli/bullio",
+            "definition": "boil" 
+        },
+        {
+            "number": "179",
+            "root": "soph/sophy",
+            "definition": "wisdom (knowledge/learning)" 
+        },
+        {
+            "number": "180",
+            "root": "phyt/phyte/phyto",
+            "definition": "plant (fungu)" 
+        },
+        {
+            "number": "181",
+            "root": "ant/ent",
+            "definition": "person who/thing that/_ing" 
+        },
+        {
+            "number": "182",
+            "root": "aero",
+            "definition": "tip/height (extremity - hand or foot/end/top)" 
+        },
+        {
+            "number": "183",
+            "root": "onym/onymy",
+            "definition": "name (sound)" 
+        },
+        {
+            "number": "184",
+            "root": "semi_",
+            "definition": "half/partly" 
+        },
+        {
+            "number": "185",
+            "root": "merg/merge",
+            "definition": "dip (dive/sink/go)" 
+        },
+        {
+            "number": "186",
+            "root": "tor/tort/torque/tortu",
+            "definition": "twist" 
+        },
+        {
+            "number": "187",
+            "root": "_ectom/ectomy",
+            "definition": "cutting out (surgery)" 
+        },
+        {
+            "number": "188",
+            "root": "klept/klepto/clept/clepto",
+            "definition": "steal" 
+        },
+        {
+            "number": "189",
+            "root": "vid/vis/visu",
+            "definition": "see (sight)" 
+        },
+        {
+            "number": "190",
+            "root": "macr/macro",
+            "definition": "large (long)" 
+        },
+        {
+            "number": "191",
+            "root": "flu/flux",
+            "definition": "flow" 
+        },
+        {
+            "number": "192",
+            "root": "heli/helio/hellion",
+            "definition": "sun" 
+        },
+        {
+            "number": "193",
+            "root": "muta",
+            "definition": "change" 
+        },
+        {
+            "number": "194",
+            "root": "vacu",
+            "definition": "empty" 
+        },
+        {
+            "number": "195",
+            "root": "_scopy",
+            "definition": "seeing (observing/viewing)" 
+        },
+        {
+            "number": "196",
+            "root": "pel/pell",
+            "definition": "drive (push/force)" 
+        },
+        {
+            "number": "197",
+            "root": "hypo",
+            "definition": "below (under/not enough/slow)" 
+        },
+        {
+            "number": "198",
+            "root": "neur/neuro",
+            "definition": "nerve (nervous system)" 
+        },
+        {
+            "number": "199",
+            "root": "port",
+            "definition": "carry" 
+        },
+        {
+            "number": "200",
+            "root": "acerb",
+            "definition": "bitter (sour/angry)" 
+        },
+        {
+            "number": "201",
+            "root": "term/termin",
+            "definition": "end (limit/boundary)" 
+        },
+        {
+            "number": "202",
+            "root": "spic/spicu",
+            "definition": "look" 
+        },
+        {
+            "number": "203",
+            "root": "se_",
+            "definition": "away (apart)" 
+        },
+        {
+            "number": "204",
+            "root": "_er/or/tor/ator",
+            "definition": "person who/something that (a device)" 
+        },
+        {
+            "number": "205",
+            "root": "cliv",
+            "definition": "slope (slant)" 
+        },
+        {
+            "number": "206",
+            "root": "som/soma/some/somat/somato",
+            "definition": "body" 
+        },
+        {
+            "number": "207",
+            "root": "rhin/rhino",
+            "definition": "nose" 
+        },
+        {
+            "number": "208",
+            "root": "photo",
+            "definition": "light" 
+        },
+        {
+            "number": "209",
+            "root": "mo/mob/mot/mote/mov",
+            "definition": "move" 
+        },
+        {
+            "number": "210",
+            "root": "enni",
+            "definition": "year" 
+        },
+        {
+            "number": "211",
+            "root": "mand",
+            "definition": "order" 
+        },
+        {
+            "number": "212",
+            "root": "pauper",
+            "definition": "poor (poor person/penniless)" 
+        },
+        {
+            "number": "213",
+            "root": "_plasty",
+            "definition": "plastic surgery (molding/shaping)" 
+        },
+        {
+            "number": "214",
+            "root": "counter",
+            "definition": "opposite/against" 
+        },
+        {
+            "number": "215",
+            "root": "mort",
+            "definition": "death/dead (fear/shame)" 
+        },
+        {
+            "number": "216",
+            "root": "dendr/dendri/dendro",
+            "definition": "tree" 
+        },
+        {
+            "number": "217",
+            "root": "non_",
+            "definition": "not/no" 
+        },
+        {
+            "number": "218",
+            "root": "_ile",
+            "definition": "able to/capable of (something that can/HTDW)" 
+        },
+        {
+            "number": "219",
+            "root": "crypt/crypto",
+            "definition": "secret/hidden" 
+        },
+        {
+            "number": "220",
+            "root": "puis",
+            "definition": "push (drive)" 
+        },
+        {
+            "number": "221",
+            "root": "petr/petro/petri",
+            "definition": "rock (stone)" 
+        },
+        {
+            "number": "222",
+            "root": "cis/cise",
+            "definition": "cut" 
+        },
+        {
+            "number": "223",
+            "root": "hier/hiero",
+            "definition": "sacred (holy)" 
+        },
+        {
+            "number": "224",
+            "root": "ost/oste/osteo",
+            "definition": "bone" 
+        },
+        {
+            "number": "225",
+            "root": "disco",
+            "definition": "disc (record - phonographic)" 
+        },
+        {
+            "number": "226",
+            "root": "kine/kinet/kineto",
+            "definition": "movement (motion/move)" 
+        },
+        {
+            "number": "227",
+            "root": "naut",
+            "definition": "ship/sailor" 
+        },
+        {
+            "number": "228",
+            "root": "juven",
+            "definition": "young" 
+        },
+        {
+            "number": "229",
+            "root": "nyc/nycti/nycto",
+            "definition": "night" 
+        },
+        {
+            "number": "230",
+            "root": "urb/urban",
+            "definition": "city" 
+        },
+        {
+            "number": "231",
+            "root": "chore/choreo",
+            "definition": "dance" 
+        },
+        {
+            "number": "232",
+            "root": "dent/denti/dento",
+            "definition": "tooth" 
+        },
+        {
+            "number": "233",
+            "root": "pac",
+            "definition": "peace (peaceful)" 
+        },
+        {
+            "number": "234",
+            "root": "proto",
+            "definition": "original (first)" 
+        },
+        {
+            "number": "235",
+            "root": "ant/anti",
+            "definition": "against/opposite" 
+        },
+        {
+            "number": "236",
+            "root": "pecuni/pecunia",
+            "definition": "money" 
+        },
+        {
+            "number": "237",
+            "root": "_ly",
+            "definition": "like/likea" 
+        },
+        {
+            "number": "238",
+            "root": "dexter/dextr/dextro",
+            "definition": "right" 
+        },
+        {
+            "number": "239",
+            "root": "melior",
+            "definition": "better" 
+        },
+        {
+            "number": "240",
+            "root": "_thesis/thes",
+            "definition": "putting" 
+        },
+        {
+            "number": "241",
+            "root": "pejor",
+            "definition": "worse(bad)" 
+        },
+        {
+            "number": "242",
+            "root": "cyst/cysti/cysto",
+            "definition": "bladder" 
+        },
+        {
+            "number": "243",
+            "root": "cred",
+            "definition": "believe" 
+        },
+        {
+            "number": "244",
+            "root": "pecc/pecca/peccato",
+            "definition": "sin" 
+        },
+        {
+            "number": "245",
+            "root": "liber",
+            "definition": "free" 
+        },
+        {
+            "number": "246",
+            "root": "mell/melli",
+            "definition": "honey (sweet)" 
+        },
+        {
+            "number": "247",
+            "root": "tin",
+            "definition": "hold" 
+        },
+        {
+            "number": "248",
+            "root": "_gram",
+            "definition": "a writing" 
+        },
+        {
+            "number": "249",
+            "root": "dec/deca/deka",
+            "definition": "ten" 
+        },
+        {
+            "number": "250",
+            "root": "herb/herbi",
+            "definition": "grass(plant)" 
+        },
+        {
+            "number": "251",
+            "root": "cresc",
+            "definition": "grow" 
+        },
+        {
+            "number": "252",
+            "root": "py/pyo",
+            "definition": "pus" 
+        },
+        {
+            "number": "253",
+            "root": "_ier/eer",
+            "definition": "person who does" 
+        },
+        {
+            "number": "254",
+            "root": "_yer",
+            "definition": "person involved in" 
+        },
+        {
+            "number": "255",
+            "root": "part",
+            "definition": "part(share/divide)" 
+        },
+        {
+            "number": "256",
+            "root": "lact/lacto",
+            "definition": "milk" 
+        },
+        {
+            "number": "257",
+            "root": "part",
+            "definition": "part (share/divide)" 
+        },
+        {
+            "number": "258",
+            "root": "phag/phago/phagy",
+            "definition": "eat (swallow)" 
+        },
+        {
+            "number": "259",
+            "root": "kilo",
+            "definition": "1000" 
+        },
+        {
+            "number": "260",
+            "root": "_lysis",
+            "definition": "loosening (breaking down/destroying/dissolving)" 
+        },
+        {
+            "number": "261",
+            "root": "prim/primo/prime/primi",
+            "definition": "first" 
+        },
+        {
+            "number": "262",
+            "root": "syl_",
+            "definition": "same/together" 
+        },
+        {
+            "number": "263",
+            "root": "dactyl/dactylio",
+            "definition": "toe/finger" 
+        },
+        {
+            "number": "264",
+            "root": "_ose",
+            "definition": "full of (like)" 
+        },
+        {
+            "number": "265",
+            "root": "sist",
+            "definition": "stand (set/place)" 
+        },
+        {
+            "number": "266",
+            "root": "xist",
+            "definition": "stand (set/place)" 
+        },
+        {
+            "number": "267",
+            "root": "putre/putrid",
+            "definition": "rot (decay)" 
+        },
+        {
+            "number": "268",
+            "root": "alio",
+            "definition": "other (different)" 
+        },
+        {
+            "number": "269",
+            "root": "ir_",
+            "definition": "in/not" 
+        },
+        {
+            "number": "270",
+            "root": "ambi",
+            "definition": "both (surround/around/about)" 
+        },
+        {
+            "number": "271",
+            "root": "cerbr/cerebro",
+            "definition": "brain" 
+        },
+        {
+            "number": "272",
+            "root": "pend",
+            "definition": "hang (weigh/pay)" 
+        },
+        {
+            "number": "273",
+            "root": "grand/grandi",
+            "definition": "big (great/large/grand)" 
+        },
+        {
+            "number": "274",
+            "root": "aero",
+            "definition": "air" 
+        },
+        {
+            "number": "275",
+            "root": "iso",
+            "definition": "equal (same/even)" 
+        },
+        {
+            "number": "276",
+            "root": "tenu",
+            "definition": "thin (lessen/weaken/reduce)" 
+        },
+        {
+            "number": "277",
+            "root": "mes/meso",
+            "definition": "middle" 
+        },
+        {
+            "number": "278",
+            "root": "_orama",
+            "definition": "view" 
+        },
+        {
+            "number": "279",
+            "root": "_gony",
+            "definition": "origin of (creating of/birth of/production of)" 
+        },
+        {
+            "number": "280",
+            "root": "_ia",
+            "definition": "condition of (_ness/_ing)" 
+        },
+        {
+            "number": "281",
+            "root": "it",
+            "definition": "go" 
+        },
+        {
+            "number": "282",
+            "root": "pleg/plegia",
+            "definition": "paralysis (stroke)" 
+        },
+        {
+            "number": "283",
+            "root": "culp/culpa",
+            "definition": "fault (blame/accuse/guilt)" 
+        },
+        {
+            "number": "284",
+            "root": "vir",
+            "definition": "man" 
+        },
+        {
+            "number": "285",
+            "root": "_ulous",
+            "definition": "full of (somewhat)" 
+        },
+        {
+            "number": "286",
+            "root": "mers/merse",
+            "definition": "dip (sink)" 
+        },
+        {
+            "number": "287",
+            "root": "at_",
+            "definition": "to/toward (on/in/against/completely)" 
+        },
+        {
+            "number": "288",
+            "root": "hort",
+            "definition": "persuade (urge/encourage/incite/press)" 
+        } 
+    ],
+    "listone": [
+        {
+            "number": "1",
+            "root": "_able/ible",
+            "definition": "able to" 
+        },
+        {
+            "number": "2",
+            "root": "_ful",
+            "definition": "full of (having to do with/having)" 
+        },
+        {
+            "number": "3",
+            "root": "_ous/ious/eous",
+            "definition": "having/full of (resembling/having to do with/_ing)" 
+        },
+        {
+            "number": "4",
+            "root": "_ity/ty",
+            "definition": "being (condition of being)" 
+        },
+        {
+            "number": "5",
+            "root": "_ation/ition/tion/ion",
+            "definition": "_ing (being/condition of being)" 
+        },
+        {
+            "number": "6",
+            "root": "_ance/ence/ancy/ency",
+            "definition": "_ing (condition of being)" 
+        },
+        {
+            "number": "7",
+            "root": "_ive/tive/itive/ative",
+            "definition": "having to do with (_ing)" 
+        },
+        {
+            "number": "8",
+            "root": "_istic",
+            "definition": "having to do with (favoring/being)" 
+        },
+        {
+            "number": "9",
+            "root": "_al/icai",
+            "definition": "having to do with/_ing (belonging to)" 
+        },
+        {
+            "number": "10",
+            "root": "_iac/ac",
+            "definition": "having to do with/person who is or has" 
+        },
+        {
+            "number": "11",
+            "root": "_ic/tic",
+            "definition": "having to do with (having/being) n. person who is (who has)" 
+        },
+        {
+            "number": "12",
+            "root": "_itis",
+            "definition": "inflamation" 
+        },
+        {
+            "number": "13",
+            "root": "_ist",
+            "definition": "specialist/believer of (one who practices)" 
+        },
+        {
+            "number": "14",
+            "root": "_ics",
+            "definition": "study of (science of/theory of)" 
+        },
+        {
+            "number": "15",
+            "root": "_ology",
+            "definition": "study of (science of)" 
+        },
+        {
+            "number": "16",
+            "root": "_graphy",
+            "definition": "written about (write or recording about)" 
+        },
+        {
+            "number": "17",
+            "root": "_graph",
+            "definition": "write (machine that writes or records)" 
+        },
+        {
+            "number": "18",
+            "root": "graph",
+            "definition": "writing (recording/drawing)" 
+        },
+        {
+            "number": "19",
+            "root": "log/logo/logy/logu/logue",
+            "definition": "word (speech/reasoning)" 
+        },
+        {
+            "number": "20",
+            "root": "lingu/lingua",
+            "definition": "language (tongue)" 
+        },
+        {
+            "number": "21",
+            "root": "_ism",
+            "definition": "being belief in (theory/practice/process of)" 
+        },
+        {
+            "number": "22",
+            "root": "_ologist",
+            "definition": "specialist (expert: study/science of)" 
+        },
+        {
+            "number": "23",
+            "root": "_meter/ometer",
+            "definition": "(device/one who measures)" 
+        },
+        {
+            "number": "24",
+            "root": "_metry/ometry",
+            "definition": "measuring (measurement of)" 
+        },
+        {
+            "number": "25",
+            "root": "metr",
+            "definition": "measure" 
+        },
+        {
+            "number": "26",
+            "root": "cycl/cycle/cyclo",
+            "definition": "wheel (circle)" 
+        },
+        {
+            "number": "27",
+            "root": "the/theo",
+            "definition": "god" 
+        },
+        {
+            "number": "28",
+            "root": "mis_",
+            "definition": "bad (badly/wrong/wrongly)" 
+        },
+        {
+            "number": "29",
+            "root": "phon/phone/phono/phony",
+            "definition": "sound (tone)" 
+        },
+        {
+            "number": "30",
+            "root": "audi/audio",
+            "definition": "hear (sound)" 
+        },
+        {
+            "number": "31",
+            "root": "astr/astro",
+            "definition": "star (space)" 
+        },
+        {
+            "number": "32",
+            "root": "cosm/cosmo",
+            "definition": "universe (world)" 
+        },
+        {
+            "number": "33",
+            "root": "techn/techno",
+            "definition": "skill (craft)" 
+        },
+        {
+            "number": "34",
+            "root": "un",
+            "definition": "not" 
+        },
+        {
+            "number": "35",
+            "root": "im_",
+            "definition": "no/not (without/lacking)" 
+        },
+        {
+            "number": "36",
+            "root": "im_",
+            "definition": "in (on/ into/ against)" 
+        },
+        {
+            "number": "37",
+            "root": "in_",
+            "definition": "no/not (without/lacking)" 
+        },
+        {
+            "number": "38",
+            "root": "in_",
+            "definition": "in (on/to/into/upon/over/against/completely)" 
+        },
+        {
+            "number": "39",
+            "root": "em_",
+            "definition": "in (completely/to)" 
+        },
+        {
+            "number": "40",
+            "root": "en_",
+            "definition": "in (completely/to)" 
+        },
+        {
+            "number": "41",
+            "root": "_en",
+            "definition": "made of/to make" 
+        },
+        {
+            "number": "42",
+            "root": "_fy/ify",
+            "definition": "to make/to become" 
+        },
+        {
+            "number": "43",
+            "root": "derm/derma/dermato",
+            "definition": "skin" 
+        },
+        {
+            "number": "44",
+            "root": "dem/demo",
+            "definition": "people (mob)" 
+        },
+        {
+            "number": "45",
+            "root": "demon/demono",
+            "definition": "demon (devil/evil spirit)" 
+        },
+        {
+            "number": "46",
+            "root": "caco",
+            "definition": "bad (abnormal/evil)" 
+        },
+        {
+            "number": "47",
+            "root": "maniac",
+            "definition": "insane person (person who is crazy about something/someone)" 
+        },
+        {
+            "number": "48",
+            "root": "_mania",
+            "definition": "madness (insanity/craze for someone/something)" 
+        },
+        {
+            "number": "49",
+            "root": "centr/center",
+            "definition": "center" 
+        },
+        {
+            "number": "50",
+            "root": "uni",
+            "definition": "one" 
+        },
+        {
+            "number": "51",
+            "root": "mono",
+            "definition": "one (single)" 
+        },
+        {
+            "number": "52",
+            "root": "bi_",
+            "definition": "two (every two)" 
+        },
+        {
+            "number": "53",
+            "root": "tri_",
+            "definition": "three (every three)" 
+        },
+        {
+            "number": "54",
+            "root": "pent/penta",
+            "definition": "five" 
+        },
+        {
+            "number": "55",
+            "root": "poly",
+            "definition": "many (much)" 
+        },
+        {
+            "number": "56",
+            "root": "mult/multi",
+            "definition": "many (much)" 
+        },
+        {
+            "number": "57",
+            "root": "crat",
+            "definition": "govern (rule/power)" 
+        },
+        {
+            "number": "58",
+            "root": "_cracy",
+            "definition": "governed by (ruled by/government by)" 
+        },
+        {
+            "number": "59",
+            "root": "ad_",
+            "definition": "to/toward (against)" 
+        },
+        {
+            "number": "60",
+            "root": "re_",
+            "definition": "again (back/against)" 
+        },
+        {
+            "number": "61",
+            "root": "retro_",
+            "definition": "back (backward/behind/location)" 
+        },
+        {
+            "number": "62",
+            "root": "ante_",
+            "definition": "before (time/place)/front (location)" 
+        },
+        {
+            "number": "63",
+            "root": "fore_",
+            "definition": "before/in front" 
+        },
+        {
+            "number": "64",
+            "root": "pre",
+            "definition": "before (beforehand)" 
+        },
+        {
+            "number": "65",
+            "root": "ex-",
+            "definition": "former (past)" 
+        },
+        {
+            "number": "66",
+            "root": "e/ex_",
+            "definition": "out (out of/away/completely/off/up)" 
+        },
+        {
+            "number": "67",
+            "root": "eu_",
+            "definition": "good (well/ pleasing/ normal)" 
+        },
+        {
+            "number": "68",
+            "root": "mal_",
+            "definition": "bad/poor (badly/poorly/evil)" 
+        },
+        {
+            "number": "69",
+            "root": "con_",
+            "definition": "with/together (completely)" 
+        },
+        {
+            "number": "70",
+            "root": "co_",
+            "definition": "with/together" 
+        },
+        {
+            "number": "71",
+            "root": "auto",
+            "definition": "self" 
+        },
+        {
+            "number": "72",
+            "root": "ego",
+            "definition": "I (self)" 
+        },
+        {
+            "number": "73",
+            "root": "egot",
+            "definition": "I (my/me)" 
+        },
+        {
+            "number": "74",
+            "root": "seism/seismo/sismo",
+            "definition": "quake (shake/earthquake)" 
+        },
+        {
+            "number": "75",
+            "root": "sub_",
+            "definition": "under/below (up/near/down/partly/in place of)" 
+        },
+        {
+            "number": "76",
+            "root": "oid",
+            "definition": "resembling (like)" 
+        },
+        {
+            "number": "77",
+            "root": "lateral",
+            "definition": "side" 
+        },
+        {
+            "number": "78",
+            "root": "gastr/gastro",
+            "definition": "stomach" 
+        },
+        {
+            "number": "79",
+            "root": "hepat/hepato",
+            "definition": "liver" 
+        },
+        {
+            "number": "80",
+            "root": "therap/therapy",
+            "definition": "treatment" 
+        },
+        {
+            "number": "81",
+            "root": "ot/oto",
+            "definition": "ear" 
+        },
+        {
+            "number": "82",
+            "root": "card/cardi/cardio",
+            "definition": "heart" 
+        },
+        {
+            "number": "83",
+            "root": "encephal/encephalo",
+            "definition": "brain" 
+        },
+        {
+            "number": "84",
+            "root": "cephal/cephalo/cephaly",
+            "definition": "head" 
+        },
+        {
+            "number": "85",
+            "root": "moiph/morpho/morphy",
+            "definition": "shape (form/structure)" 
+        },
+        {
+            "number": "86",
+            "root": "micro",
+            "definition": "small" 
+        },
+        {
+            "number": "87",
+            "root": "dyna/dynam/dynamo",
+            "definition": "power (force/energy)" 
+        },
+        {
+            "number": "88",
+            "root": "potent",
+            "definition": "power (having power/energy/force)" 
+        },
+        {
+            "number": "89",
+            "root": "tox/toxi/toxico/toxo",
+            "definition": "poison" 
+        },
+        {
+            "number": "90",
+            "root": "hydr/hvdro",
+            "definition": "water (liquid)" 
+        },
+        {
+            "number": "91",
+            "root": "due/duce/duct",
+            "definition": "lead" 
+        },
+        {
+            "number": "92",
+            "root": "ced/cede/ceed",
+            "definition": "go (yield)" 
+        },
+        {
+            "number": "93",
+            "root": "grad/gradi/gradu",
+            "definition": "step (go/walk)" 
+        },
+        {
+            "number": "94",
+            "root": "pyr/pyro",
+            "definition": "fire (heat)" 
+        },
+        {
+            "number": "95",
+            "root": "lith/litho",
+            "definition": "stone (rock)" 
+        },
+        {
+            "number": "96",
+            "root": "chrom/chroma/chrome/chromo/chromato",
+            "definition": "color" 
+        },
+        {
+            "number": "97",
+            "root": "therm/thermo",
+            "definition": "heat" 
+        },
+        {
+            "number": "98",
+            "root": "_gen",
+            "definition": "produce/producing (creating/developing)" 
+        },
+        {
+            "number": "99",
+            "root": "_genous",
+            "definition": "producing/giving birth/creating" 
+        },
+        {
+            "number": "100",
+            "root": "_geny",
+            "definition": "production of(creation/ giving birth to/development)" 
+        },
+        {
+            "number": "101",
+            "root": "genesis",
+            "definition": "origin of (creation/production/source/birth of)" 
+        },
+        {
+            "number": "102",
+            "root": "gene/geno/genit/gener",
+            "definition": "race/ kind (birth of/origin)" 
+        },
+        {
+            "number": "103",
+            "root": "gam/gamy",
+            "definition": "marriage" 
+        },
+        {
+            "number": "104",
+            "root": "gyn/gynv/gyneco",
+            "definition": "woman (wife)" 
+        },
+        {
+            "number": "105",
+            "root": "andr/andro/andry",
+            "definition": "man (husband)" 
+        },
+        {
+            "number": "106",
+            "root": "aristo",
+            "definition": "elite (noble class/ top class)" 
+        },
+        {
+            "number": "107",
+            "root": "pluto",
+            "definition": "wealth (rich)" 
+        },
+        {
+            "number": "108",
+            "root": "ultra",
+            "definition": "extreme (beyond/excess)" 
+        },
+        {
+            "number": "109",
+            "root": "bureau",
+            "definition": "department" 
+        },
+        {
+            "number": "110",
+            "root": "_phile",
+            "definition": "person who loves (lover of/fond of)" 
+        },
+        {
+            "number": "111",
+            "root": "_phobe",
+            "definition": "person who fears/one who fears" 
+        },
+        {
+            "number": "112",
+            "root": "phob",
+            "definition": "extreme fear of" 
+        },
+        {
+            "number": "113",
+            "root": "phobia",
+            "definition": "extreme fear of (condition of)" 
+        },
+        {
+            "number": "114",
+            "root": "neo",
+            "definition": "new (current)" 
+        },
+        {
+            "number": "115",
+            "root": "spec/spect",
+            "definition": "look (see/appear)" 
+        },
+        {
+            "number": "116",
+            "root": "tel/tele",
+            "definition": "long distance" 
+        },
+        {
+            "number": "117",
+            "root": "homo",
+            "definition": "same" 
+        },
+        {
+            "number": "118",
+            "root": "hetero",
+            "definition": "different (opposite)" 
+        },
+        {
+            "number": "119",
+            "root": "_algia/algesia",
+            "definition": "pain (ache)" 
+        },
+        {
+            "number": "120",
+            "root": "alg/alge/alges/algo",
+            "definition": "pain (ache)" 
+        } 
+    ]
+}

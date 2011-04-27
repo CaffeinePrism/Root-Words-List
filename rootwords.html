@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>Root Words Lists 1 + 2</title>
+<style type="text/css">
+.sorting_asc {
+	background: url('images/sort_asc.png') no-repeat center right #42b0c9;
+}
+
+.sorting_desc {
+	background: url('images/sort_desc.png') no-repeat center right #42b0c9;
+}
+
+.sorting {
+	background: url('images/sort_both.png') no-repeat center right #42b0c9;
+}
+
+.sorting_asc_disabled {
+	background: url('images/sort_asc_disabled.png') no-repeat center right #42b0c9;
+}
+
+.sorting_desc_disabled {
+	background: url('images/sort_desc_disabled.png') no-repeat center right #42b0c9;
+}
+
+.rtable {border:1px solid #42b0c9;border-bottom:0;border-right:0;margin:0;margin-left:-5px;border-collapse:collapse;width:100%;padding:4px}
+.rtable th {border:1px solid #42B0C9;border-right:0px solid #64CBE2;color:#fff;font-size:14px;padding:3px 5px}
+.rtable td {border-bottom:1px solid #64CBE2;background:#EBF6F9;border-right:1px solid #64CBE2;padding:3px 5px}
+.rtable tr:hover td {background-color:#ffffc1;}
+</style>
+<script type="text/javascript" src="http://dl.dropbox.com/u/5329185/rootwords/cssjs/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="http://dl.dropbox.com/u/5329185/rootwords/cssjs/jquery.dataTables.min.js"></script>
+<script type="text/javascript">
+$.fn.dataTableExt.afnFiltering.push(
+	function( oSettings, aData, iDataIndex ) {
+		var iMin = (document.getElementById('min').value * 1);
+		var iMax = (document.getElementById('max').value * 1);
+		var iVersion = aData[0] == "W" ? 0 : aData[0]*1;
+		if ( iMin == "" && iMax == "" )
+		{
+			return true;
+		}
+		else if ( iMin - 1 == "" && iVersion < iMax + 1 )
+		{
+			return true;
+		}
+		else if ( iMin - 1 < iVersion && "" == iMax)
+		{
+			return true;
+		}
+		else if ( iMin - 1 < iVersion && iVersion < iMax + 1 )
+		{
+			return true;
+		}
+		return false;
+	}
+);
+
+jQuery.fn.dataTableExt.oSort['anti-unds-asc'] = function(a,b) {
+	var x = a.replace(/_/, "");
+	var y = b.replace(/_/, "");
+	return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+};
+
+jQuery.fn.dataTableExt.oSort['anti-unds-desc'] = function(a,b) {
+	var x = a.replace(/_/, "");
+	var y = b.replace(/_/, "");
+	return ((x < y) ? 1 : ((x > y) ? -1 : 0));
+};
+
+$(document).ready(function() 
+    { 
+        $("#rlist3").dataTable( {
+			"aaSorting": [[ 1, "asc" ]],
+			"aoColumnDefs": [
+				{ "sType": "anti-unds-asc", "aTargets": 1 }
+			],
+			"bAutoWidth": false,
+			"iDisplayLength": -1,
+			"oLanguage": {
+				"sLengthMenu": 'Display <select>'+
+				'<option value="10">10</option>'+
+				'<option value="25">25</option>'+
+				'<option value="50">50</option>'+
+				'<option value="100">100</option>'+
+				'<option value="-1">All</option>'+
+				'</select> entries'
+			}
+		} );
+		var oTable = $('#rlist3').dataTable();
+		$('#min').keyup( function() { oTable.fnDraw(); } );
+		$('#max').keyup( function() { oTable.fnDraw(); } );
+	} );
+</script>
+</head><body>
+Roots with W in front of the number mean that it is from the <em><b>w</b></em>hite list.
+<br />
+<br />
+Limit to numbers <input type="text" id="min" name="min" size="4" /> to <input type="text" id="max" name="max" size="4" />
+<!-- TODO: 
+* Add 3 filtering options: first list, second list only, show both (default to both) 
+* Possible quiz system?
+* images -> base64 encoded?
+-->
+<br />
+<br />
+<table id="rlist3" class="rtable">
+<thead>
+<tr><th>#</th><th>Root</th><th>Definition</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>dubi/dubit</td><td>doubt</td></tr>
+<tr><td>2</td><td>_osis</td><td>disease/condition of (disorder/abnormality)</td></tr>
+<tr><td>3</td><td>line</td><td>line</td></tr>
+<tr><td>4</td><td>aqu/aqua</td><td>water</td></tr>
+<tr><td>5</td><td>_acious</td><td>foil of (HTDW/having)</td></tr>
+<tr><td>6</td><td>carn/carni</td><td>flesh (meat)</td></tr>
+<tr><td>7</td><td>vor</td><td>devour (feed/gorge)</td></tr>
+<tr><td>8</td><td>dia_</td><td>through (across)</td></tr>
+<tr><td>9</td><td>syn/sym</td><td>same/together</td></tr>
+<tr><td>10</td><td>noc/nocu/noxi</td><td>harm</td></tr>
+<tr><td>11</td><td>cid/cide</td><td>kill/killing</td></tr>
+<tr><td>12</td><td>odont/odonto</td><td>tooth</td></tr>
+<tr><td>13</td><td>tain</td><td>hold (reach)</td></tr>
+<tr><td>14</td><td>kinesi/kinesis</td><td>movement (motion)</td></tr>
+<tr><td>15</td><td>jac</td><td>lie (situate)</td></tr>
+<tr><td>16</td><td>pachy</td><td>thick (hard)</td></tr>
+<tr><td>17</td><td>apo</td><td>away from (apart/off/remove from)</td></tr>
+<tr><td>18</td><td>viv/vivi</td><td>alive (live/life)</td></tr>
+<tr><td>19</td><td>col_</td><td>with/together</td></tr>
+<tr><td>20</td><td>debil</td><td>weak (weaken)</td></tr>
+<tr><td>21</td><td>pos/pose</td><td>put (place)</td></tr>
+<tr><td>22</td><td>celer</td><td>speed</td></tr>
+<tr><td>23</td><td>geront/geronto</td><td>old person (old age)</td></tr>
+<tr><td>24</td><td>acri/acrid</td><td>bitter (sharp/sting - of eyes/nose/skin/etc.)</td></tr>
+<tr><td>25</td><td>pauci</td><td>few (scarce/little)</td></tr>
+<tr><td>26</td><td>bene</td><td>good/well</td></tr>
+<tr><td>27</td><td>magn/magni/magna</td><td>great (big)</td></tr>
+<tr><td>28</td><td>scend/scent/scens</td><td>climb (go)</td></tr>
+<tr><td>29</td><td>icon/icono</td><td>religious objects</td></tr>
+<tr><td>30</td><td>ceiv/ceive</td><td>take</td></tr>
+<tr><td>31</td><td>err/erra</td><td>wander (make mistakes/ blunder/ stray)</td></tr>
+<tr><td>32</td><td>mal/male_</td><td>bad/wrong (evil/badly/poorly)</td></tr>
+<tr><td>33</td><td>tra_</td><td>through (beyond/across)</td></tr>
+<tr><td>34</td><td>greg</td><td>crowd/flock (group/herd/gather/add)</td></tr>
+<tr><td>35</td><td>trache/tracheo</td><td>windpipe</td></tr>
+<tr><td>36</td><td>pseud/pseudo</td><td>false</td></tr>
+<tr><td>37</td><td>vacill</td><td>waver (sway)</td></tr>
+<tr><td>38</td><td>dicho</td><td>in two (twice)</td></tr>
+<tr><td>39</td><td>_ward/wards</td><td>toward (direction of)</td></tr>
+<tr><td>40</td><td>lumin/lumine</td><td>light (shine)</td></tr>
+<tr><td>41</td><td>super</td><td>over (above/beyond/great)</td></tr>
+<tr><td>42</td><td>gest</td><td>carry (bear)</td></tr>
+<tr><td>43</td><td>pater/patr/patro/partri</td><td>father</td></tr>
+<tr><td>44</td><td>mater/matr/matri/matro/metro</td><td>mother</td></tr>
+<tr><td>45</td><td>genu</td><td>knee (Joint)</td></tr>
+<tr><td>46</td><td>xeno</td><td>foreigner (stranger/foreign)</td></tr>
+<tr><td>47</td><td>pugn/pugna</td><td>fight (attack)</td></tr>
+<tr><td>48</td><td>_dox/doxy</td><td>opinion (thinking/believing)</td></tr>
+<tr><td>49</td><td>plen/pleni/plente/plenti</td><td>full (fill)</td></tr>
+<tr><td>50</td><td>dei</td><td>god</td></tr>
+<tr><td>51</td><td>nephr/nephro</td><td>kidney</td></tr>
+<tr><td>52</td><td>exo</td><td>outside (outer/outside of)</td></tr>
+<tr><td>53</td><td>_ial</td><td>having to do with (having/_ing/being)</td></tr>
+<tr><td>54</td><td>equ/equi</td><td>even (same)</td></tr>
+<tr><td>55</td><td>fac/fact/fic/ific</td><td>make (do)</td></tr>
+<tr><td>56</td><td>secular</td><td>worldly</td></tr>
+<tr><td>57</td><td>fin/fine</td><td>end (limit)</td></tr>
+<tr><td>58</td><td>plet/plete</td><td>fill (full)</td></tr>
+<tr><td>59</td><td>ornith/ornitho</td><td>bird</td></tr>
+<tr><td>60</td><td>clud/clude/clus/cluse</td><td>shut (close)</td></tr>
+<tr><td>61</td><td>nil/nihil</td><td>nothing (wipe out)</td></tr>
+<tr><td>62</td><td>ac_</td><td>to (toward/against/on/in)</td></tr>
+<tr><td>63</td><td>contra/contro</td><td>against (opposite)</td></tr>
+<tr><td>64</td><td>demi</td><td>half (partly)</td></tr>
+<tr><td>65</td><td>jug</td><td>join (unite/yoke/conquer)</td></tr>
+<tr><td>66</td><td>di_</td><td>away (apart/from)</td></tr>
+<tr><td>67</td><td>di_</td><td>two/second (twice)</td></tr>
+<tr><td>68</td><td>_arch</td><td>ruler</td></tr>
+<tr><td>69</td><td>arch_</td><td>chief</td></tr>
+<tr><td>70</td><td>_archy</td><td>government by (ruled by)</td></tr>
+<tr><td>71</td><td>orth/ortho</td><td>correct (straight)</td></tr>
+<tr><td>72</td><td>ign/igni/ignit</td><td>fire</td></tr>
+<tr><td>73</td><td>cur/curr/curs</td><td>run</td></tr>
+<tr><td>74</td><td>mega/megalo/megaly</td><td>large (huge/one million/grandeur)</td></tr>
+<tr><td>75</td><td>an_</td><td>to (toward/on/in/against)</td></tr>
+<tr><td>76</td><td>moni</td><td>warn</td></tr>
+<tr><td>77</td><td>endo_</td><td>inside (within)</td></tr>
+<tr><td>78</td><td>ophthalm/ophthalmo</td><td>eye</td></tr>
+<tr><td>79</td><td>_an/ian</td><td>specialist in</td></tr>
+<tr><td>80</td><td>_an/ian</td><td>native of</td></tr>
+<tr><td>81</td><td>vers</td><td>turn</td></tr>
+<tr><td>82</td><td>op_</td><td>against (opposite)</td></tr>
+<tr><td>83</td><td>_ness</td><td>being</td></tr>
+<tr><td>84</td><td>sec/sect</td><td>cut</td></tr>
+<tr><td>85</td><td>nul/null</td><td>nothing (void/not)</td></tr>
+<tr><td>86</td><td>post_</td><td>after</td></tr>
+<tr><td>87</td><td>_later</td><td>worshiper (one who adores)</td></tr>
+<tr><td>88</td><td>ambul/amble</td><td>walk</td></tr>
+<tr><td>89</td><td>not/nota/note</td><td>note (mark)</td></tr>
+<tr><td>90</td><td>dif_</td><td>apart (away from/aside)</td></tr>
+<tr><td>91</td><td>scrib/script</td><td>write</td></tr>
+<tr><td>92</td><td>_ure</td><td>_ing (being)</td></tr>
+<tr><td>93</td><td>secu/sequ</td><td>follow</td></tr>
+<tr><td>94</td><td>tract</td><td>draw (drag/pull/lead)</td></tr>
+<tr><td>95</td><td>dys_</td><td>bad (difficult/abnormal/defective)</td></tr>
+<tr><td>96</td><td>cogit</td><td>think</td></tr>
+<tr><td>97</td><td>tetra/tetr</td><td>four</td></tr>
+<tr><td>98</td><td>ab/abs_</td><td>away (from/off)</td></tr>
+<tr><td>99</td><td>hes/her/here</td><td>stick</td></tr>
+<tr><td>100</td><td>_fold</td><td>times</td></tr>
+<tr><td>101</td><td>crani/cranio</td><td>skull</td></tr>
+<tr><td>102</td><td>matur/mature</td><td>ripe (ripen)</td></tr>
+<tr><td>103</td><td>pan/panto_</td><td>all</td></tr>
+<tr><td>104</td><td>syn/sym</td><td>same (similar)</td></tr>
+<tr><td>105</td><td>de_</td><td>away (down/not/from/remove/take away)</td></tr>
+<tr><td>106</td><td>hema/hemo/hemato</td><td>blood</td></tr>
+<tr><td>107</td><td>phil/philo</td><td>love</td></tr>
+<tr><td>108</td><td>press</td><td>press</td></tr>
+<tr><td>109</td><td>_ate</td><td>(v) - to make (become/produce/to) (adj) - HTDW/having/full of/resembling (n) - office/title/made from - chemical (condition)</td></tr>
+<tr><td>110</td><td>tom/tomo/tomy</td><td>cut/cutting</td></tr>
+<tr><td>111</td><td>pro</td><td>forward (forth/before/beforehand)</td></tr>
+<tr><td>112</td><td>pro</td><td>in favor of (for someone/something/cause)</td></tr>
+<tr><td>113</td><td>biblio</td><td>book</td></tr>
+<tr><td>114</td><td>cept</td><td>take (seize)</td></tr>
+<tr><td>115</td><td>omni</td><td>all (everything)</td></tr>
+<tr><td>116</td><td>migr/migra</td><td>move</td></tr>
+<tr><td>117</td><td>com_</td><td>with/together (completely)</td></tr>
+<tr><td>118</td><td>ject</td><td>throw/hurl</td></tr>
+<tr><td>119</td><td>enter/entero</td><td>intestine</td></tr>
+<tr><td>120</td><td>locu/loqu/loquy</td><td>speak (talk)</td></tr>
+<tr><td>121</td><td>peri_</td><td>around (near/boundary/surround)</td></tr>
+<tr><td>122</td><td>a/an_</td><td>in/on (to/toward)</td></tr>
+<tr><td>123</td><td>a/an_</td><td>no/not (lacking/without)</td></tr>
+<tr><td>124</td><td>miso_</td><td>hate (hatred/hating)</td></tr>
+<tr><td>125</td><td>_scope</td><td>viewing device (an instrument to see)</td></tr>
+<tr><td>126</td><td>_ize</td><td>to make (become/produce/to)</td></tr>
+<tr><td>127</td><td>path/pathy/patho</td><td>disease/suffering (abnormality/disorder)</td></tr>
+<tr><td>128</td><td>path/pathy/pathe</td><td>feeling/suffering</td></tr>
+<tr><td>129</td><td>latr/latry</td><td>worship (adoration)</td></tr>
+<tr><td>130</td><td>sci</td><td>know (aware/knowledge)</td></tr>
+<tr><td>131</td><td>intra/intro_</td><td>within (inside)</td></tr>
+<tr><td>132</td><td>trans/tran</td><td>across (through/beyond/over/pass/change)</td></tr>
+<tr><td>133</td><td>hyper</td><td>over/excessive (too much/beyond)</td></tr>
+<tr><td>134</td><td>quadr/quadri/quadru</td><td>four (square)</td></tr>
+<tr><td>135</td><td>labor</td><td>work</td></tr>
+<tr><td>136</td><td>gress</td><td>go (walk/step)</td></tr>
+<tr><td>137</td><td>ichthy/ichthyo</td><td>fish</td></tr>
+<tr><td>138</td><td>radi/radio</td><td>ray (light/X-ray/light energy)</td></tr>
+<tr><td>139</td><td>xero</td><td>dry</td></tr>
+<tr><td>140</td><td>flex/fleet</td><td>bend (curve)</td></tr>
+<tr><td>141</td><td>per_</td><td>through (throughout/by)</td></tr>
+<tr><td>142</td><td>ob_</td><td>against (toward/over/completely/up)</td></tr>
+<tr><td>143</td><td>fer/ferr</td><td>carry (bear/produce/bring)</td></tr>
+<tr><td>144</td><td>gnos/gnost</td><td>know (person who knows/aware)</td></tr>
+<tr><td>145</td><td>gnosis/gnosia</td><td>knowing (knowledge/awareness/recognition)</td></tr>
+<tr><td>146</td><td>magnet/magneto</td><td>magnet</td></tr>
+<tr><td>147</td><td>extra/extro_</td><td>outside (out of/outer/beyond)</td></tr>
+<tr><td>148</td><td>arthr/arthro</td><td>j oint</td></tr>
+<tr><td>149</td><td>dis_</td><td>not/apart (away from/lack of/break apart)</td></tr>
+<tr><td>150</td><td>spher/sphere</td><td>globe (ball/circle)</td></tr>
+<tr><td>151</td><td>ven/veni/vent/vene</td><td>come</td></tr>
+<tr><td>152</td><td>somn/somni/somno</td><td>sleep</td></tr>
+<tr><td>153</td><td>_ish</td><td>somewhat/native of (like/being)</td></tr>
+<tr><td>154</td><td>gon</td><td>side (angle - when used with angles and numerals)</td></tr>
+<tr><td>155</td><td>rupt</td><td>break</td></tr>
+<tr><td>156</td><td>fits/fuse</td><td>pour (melt/spread)</td></tr>
+<tr><td>157</td><td>hemi_</td><td>half (partly)</td></tr>
+<tr><td>158</td><td>myo</td><td>muscle</td></tr>
+<tr><td>159</td><td>cogn/cognosc</td><td>aware (know/knowledge)</td></tr>
+<tr><td>160</td><td>_ment</td><td>_ing(being__ed)</td></tr>
+<tr><td>161</td><td>pon/pone</td><td>put (place)</td></tr>
+<tr><td>162</td><td>medi/media</td><td>middle</td></tr>
+<tr><td>163</td><td>penta</td><td>five</td></tr>
+<tr><td>164</td><td>ible/able</td><td>able to</td></tr>
+<tr><td>165</td><td>ped/pod/pody</td><td>foot</td></tr>
+<tr><td>166</td><td>extra</td><td>beyond/outside</td></tr>
+<tr><td>167</td><td>tort</td><td>twist</td></tr>
+<tr><td>168</td><td>inter</td><td>between/among</td></tr>
+<tr><td>169</td><td>ion</td><td>_ing</td></tr>
+<tr><td>170</td><td>dur/dura</td><td>last/hard</td></tr>
+<tr><td>171</td><td>vox/voc/voci/voke</td><td>call/voice/speak</td></tr>
+<tr><td>172</td><td>circum</td><td>around</td></tr>
+<tr><td>173</td><td>mit/mitt</td><td>send (throw)</td></tr>
+<tr><td>174</td><td>vert</td><td>turn</td></tr>
+<tr><td>175</td><td>junct</td><td>connect/join</td></tr>
+<tr><td>176</td><td>e/ec</td><td>out/ out of</td></tr>
+<tr><td>177</td><td>chron/chrono</td><td>time</td></tr>
+<tr><td>178</td><td>bulli/bullio</td><td>boil</td></tr>
+<tr><td>179</td><td>soph/sophy</td><td>wisdom (knowledge/learning)</td></tr>
+<tr><td>180</td><td>phyt/phyte/phyto</td><td>plant (fungu)</td></tr>
+<tr><td>181</td><td>ant/ent</td><td>person who/thing that/_ing</td></tr>
+<tr><td>182</td><td>aero</td><td>tip/height (extremity - hand or foot/end/top)</td></tr>
+<tr><td>183</td><td>onym/onymy</td><td>name (sound)</td></tr>
+<tr><td>184</td><td>semi_</td><td>half/partly</td></tr>
+<tr><td>185</td><td>merg/merge</td><td>dip (dive/sink/go)</td></tr>
+<tr><td>186</td><td>tor/tort/torque/tortu</td><td>twist</td></tr>
+<tr><td>187</td><td>_ectom/ectomy</td><td>cutting out (surgery)</td></tr>
+<tr><td>188</td><td>klept/klepto/clept/clepto</td><td>steal</td></tr>
+<tr><td>189</td><td>vid/vis/visu</td><td>see (sight)</td></tr>
+<tr><td>190</td><td>macr/macro</td><td>large (long)</td></tr>
+<tr><td>191</td><td>flu/flux</td><td>flow</td></tr>
+<tr><td>192</td><td>heli/helio/hellion</td><td>sun</td></tr>
+<tr><td>193</td><td>muta</td><td>change</td></tr>
+<tr><td>194</td><td>vacu</td><td>empty</td></tr>
+<tr><td>195</td><td>_scopy</td><td>seeing (observing/viewing)</td></tr>
+<tr><td>196</td><td>pel/pell</td><td>drive (push/force)</td></tr>
+<tr><td>197</td><td>hypo</td><td>below (under/not enough/slow)</td></tr>
+<tr><td>198</td><td>neur/neuro</td><td>nerve (nervous system)</td></tr>
+<tr><td>199</td><td>port</td><td>carry</td></tr>
+<tr><td>200</td><td>acerb</td><td>bitter (sour/angry)</td></tr>
+<tr><td>201</td><td>term/termin</td><td>end (limit/boundary)</td></tr>
+<tr><td>202</td><td>spic/spicu</td><td>look</td></tr>
+<tr><td>203</td><td>se_</td><td>away (apart)</td></tr>
+<tr><td>204</td><td>_er/or/tor/ator</td><td>person who/something that (a device)</td></tr>
+<tr><td>205</td><td>cliv</td><td>slope (slant)</td></tr>
+<tr><td>206</td><td>som/soma/some/somat/somato</td><td>body</td></tr>
+<tr><td>207</td><td>rhin/rhino</td><td>nose</td></tr>
+<tr><td>208</td><td>photo</td><td>light</td></tr>
+<tr><td>209</td><td>mo/mob/mot/mote/mov</td><td>move</td></tr>
+<tr><td>210</td><td>enni</td><td>year</td></tr>
+<tr><td>211</td><td>mand</td><td>order</td></tr>
+<tr><td>212</td><td>pauper</td><td>poor (poor person/penniless)</td></tr>
+<tr><td>213</td><td>_plasty</td><td>plastic surgery (molding/shaping)</td></tr>
+<tr><td>214</td><td>counter</td><td>opposite/against</td></tr>
+<tr><td>215</td><td>mort</td><td>death/dead (fear/shame)</td></tr>
+<tr><td>216</td><td>dendr/dendri/dendro</td><td>tree</td></tr>
+<tr><td>217</td><td>non_</td><td>not/no</td></tr>
+<tr><td>218</td><td>_ile</td><td>able to/capable of (something that can/HTDW)</td></tr>
+<tr><td>219</td><td>crypt/crypto</td><td>secret/hidden</td></tr>
+<tr><td>220</td><td>puis</td><td>push (drive)</td></tr>
+<tr><td>221</td><td>petr/petro/petri</td><td>rock (stone)</td></tr>
+<tr><td>222</td><td>cis/cise</td><td>cut</td></tr>
+<tr><td>223</td><td>hier/hiero</td><td>sacred (holy)</td></tr>
+<tr><td>224</td><td>ost/oste/osteo</td><td>bone</td></tr>
+<tr><td>225</td><td>disco</td><td>disc (record - phonographic)</td></tr>
+<tr><td>226</td><td>kine/kinet/kineto</td><td>movement (motion/move)</td></tr>
+<tr><td>227</td><td>naut</td><td>ship/sailor</td></tr>
+<tr><td>228</td><td>juven</td><td>young</td></tr>
+<tr><td>229</td><td>nyc/nycti/nycto</td><td>night</td></tr>
+<tr><td>230</td><td>urb/urban</td><td>city</td></tr>
+<tr><td>231</td><td>chore/choreo</td><td>dance</td></tr>
+<tr><td>232</td><td>dent/denti/dento</td><td>tooth</td></tr>
+<tr><td>233</td><td>pac</td><td>peace (peaceful)</td></tr>
+<tr><td>234</td><td>proto</td><td>original (first)</td></tr>
+<tr><td>235</td><td>ant/anti</td><td>against/opposite</td></tr>
+<tr><td>236</td><td>pecuni/pecunia</td><td>money</td></tr>
+<tr><td>237</td><td>_ly</td><td>like/likea</td></tr>
+<tr><td>238</td><td>dexter/dextr/dextro</td><td>right</td></tr>
+<tr><td>239</td><td>melior</td><td>better</td></tr>
+<tr><td>240</td><td>_thesis/thes</td><td>putting</td></tr>
+<tr><td>241</td><td>pejor</td><td>worse(bad)</td></tr>
+<tr><td>242</td><td>cyst/cysti/cysto</td><td>bladder</td></tr>
+<tr><td>243</td><td>cred</td><td>believe</td></tr>
+<tr><td>244</td><td>pecc/pecca/peccato</td><td>sin</td></tr>
+<tr><td>245</td><td>liber</td><td>free</td></tr>
+<tr><td>246</td><td>mell/melli</td><td>honey (sweet)</td></tr>
+<tr><td>247</td><td>tin</td><td>hold</td></tr>
+<tr><td>248</td><td>_gram</td><td>a writing</td></tr>
+<tr><td>249</td><td>dec/deca/deka</td><td>ten</td></tr>
+<tr><td>250</td><td>herb/herbi</td><td>grass(plant)</td></tr>
+<tr><td>251</td><td>cresc</td><td>grow</td></tr>
+<tr><td>252</td><td>py/pyo</td><td>pus</td></tr>
+<tr><td>253</td><td>_ier/eer</td><td>person who does</td></tr>
+<tr><td>254</td><td>_yer</td><td>person involved in</td></tr>
+<tr><td>255</td><td>part</td><td>part(share/divide)</td></tr>
+<tr><td>256</td><td>lact/lacto</td><td>milk</td></tr>
+<tr><td>257</td><td>part</td><td>part (share/divide)</td></tr>
+<tr><td>258</td><td>phag/phago/phagy</td><td>eat (swallow)</td></tr>
+<tr><td>259</td><td>kilo</td><td>1000</td></tr>
+<tr><td>260</td><td>_lysis</td><td>loosening (breaking down/destroying/dissolving)</td></tr>
+<tr><td>261</td><td>prim/primo/prime/primi</td><td>first</td></tr>
+<tr><td>262</td><td>syl_</td><td>same/together</td></tr>
+<tr><td>263</td><td>dactyl/dactylio</td><td>toe/finger</td></tr>
+<tr><td>264</td><td>_ose</td><td>full of (like)</td></tr>
+<tr><td>265</td><td>sist</td><td>stand (set/place)</td></tr>
+<tr><td>266</td><td>xist</td><td>stand (set/place)</td></tr>
+<tr><td>267</td><td>putre/putrid</td><td>rot (decay)</td></tr>
+<tr><td>268</td><td>alio</td><td>other (different)</td></tr>
+<tr><td>269</td><td>ir_</td><td>in/not</td></tr>
+<tr><td>270</td><td>ambi</td><td>both (surround/around/about)</td></tr>
+<tr><td>271</td><td>cerbr/cerebro</td><td>brain</td></tr>
+<tr><td>272</td><td>pend</td><td>hang (weigh/pay)</td></tr>
+<tr><td>273</td><td>grand/grandi</td><td>big (great/large/grand)</td></tr>
+<tr><td>274</td><td>aero</td><td>air</td></tr>
+<tr><td>275</td><td>iso</td><td>equal (same/even)</td></tr>
+<tr><td>276</td><td>tenu</td><td>thin (lessen/weaken/reduce)</td></tr>
+<tr><td>277</td><td>mes/meso</td><td>middle</td></tr>
+<tr><td>278</td><td>_orama</td><td>view</td></tr>
+<tr><td>279</td><td>_gony</td><td>origin of (creating of/birth of/production of)</td></tr>
+<tr><td>280</td><td>_ia</td><td>condition of (_ness/_ing)</td></tr>
+<tr><td>281</td><td>it</td><td>go</td></tr>
+<tr><td>282</td><td>pleg/plegia</td><td>paralysis (stroke)</td></tr>
+<tr><td>283</td><td>culp/culpa</td><td>fault (blame/accuse/guilt)</td></tr>
+<tr><td>284</td><td>vir</td><td>man</td></tr>
+<tr><td>285</td><td>_ulous</td><td>full of (somewhat)</td></tr>
+<tr><td>286</td><td>mers/merse</td><td>dip (sink)</td></tr>
+<tr><td>287</td><td>at_</td><td>to/toward (on/in/against/completely)</td></tr>
+<tr><td>288</td><td>hort</td><td>persuade (urge/encourage/incite/press)</td></tr>
+<tr><td>W1</td><td>_able/ible</td><td>able to</td></tr>
+<tr><td>W2</td><td>_ful</td><td>full of (having to do with/having)</td></tr>
+<tr><td>W3</td><td>_ous/ious/eous</td><td>having/full of (resembling/having to do with/_ing)</td></tr>
+<tr><td>W4</td><td>_ity/ty</td><td>being (condition of being)</td></tr>
+<tr><td>W5</td><td>_ation/ition/tion/ion</td><td>_ing (being/condition of being)</td></tr>
+<tr><td>W6</td><td>_ance/ence/ancy/ency</td><td>_ing (condition of being)</td></tr>
+<tr><td>W7</td><td>_ive/tive/itive/ative</td><td>having to do with (_ing)</td></tr>
+<tr><td>W8</td><td>_istic</td><td>having to do with (favoring/being)</td></tr>
+<tr><td>W9</td><td>_al/icai</td><td>having to do with/_ing (belonging to)</td></tr>
+<tr><td>W10</td><td>_iac/ac</td><td>having to do with/person who is or has</td></tr>
+<tr><td>W11</td><td>_ic/tic</td><td>having to do with (having/being) n. person who is (who has)</td></tr>
+<tr><td>W12</td><td>_itis</td><td>inflamation</td></tr>
+<tr><td>W13</td><td>_ist</td><td>specialist/believer of (one who practices)</td></tr>
+<tr><td>W14</td><td>_ics</td><td>study of (science of/theory of)</td></tr>
+<tr><td>W15</td><td>_ology</td><td>study of (science of)</td></tr>
+<tr><td>W16</td><td>_graphy</td><td>written about (write or recording about)</td></tr>
+<tr><td>W17</td><td>_graph</td><td>write (machine that writes or records)</td></tr>
+<tr><td>W18</td><td>graph</td><td>writing (recording/drawing)</td></tr>
+<tr><td>W19</td><td>log/logo/logy/logu/logue</td><td>word (speech/reasoning)</td></tr>
+<tr><td>W20</td><td>lingu/lingua</td><td>language (tongue)</td></tr>
+<tr><td>W21</td><td>_ism</td><td>being belief in (theory/practice/process of)</td></tr>
+<tr><td>W22</td><td>_ologist</td><td>specialist (expert: study/science of)</td></tr>
+<tr><td>W23</td><td>_meter/ometer</td><td>(device/one who measures)</td></tr>
+<tr><td>W24</td><td>_metry/ometry</td><td>measuring (measurement of)</td></tr>
+<tr><td>W25</td><td>metr</td><td>measure</td></tr>
+<tr><td>W26</td><td>cycl/cycle/cyclo</td><td>wheel (circle)</td></tr>
+<tr><td>W27</td><td>the/theo</td><td>god</td></tr>
+<tr><td>W28</td><td>mis_</td><td>bad (badly/wrong/wrongly)</td></tr>
+<tr><td>W29</td><td>phon/phone/phono/phony</td><td>sound (tone)</td></tr>
+<tr><td>W30</td><td>audi/audio</td><td>hear (sound)</td></tr>
+<tr><td>WA</td><td>arid</td><td>dry</td></tr>
+<tr><td>W31</td><td>astr/astro</td><td>star (space)</td></tr>
+<tr><td>W32</td><td>cosm/cosmo</td><td>universe (world)</td></tr>
+<tr><td>W33</td><td>techn/techno</td><td>skill (craft)</td></tr>
+<tr><td>W34</td><td>un</td><td>not</td></tr>
+<tr><td>W35</td><td>im_</td><td>no/not (without/lacking)</td></tr>
+<tr><td>W36</td><td>im_</td><td>in (on/ into/ against)</td></tr>
+<tr><td>W37</td><td>in_</td><td>no/not (without/lacking)</td></tr>
+<tr><td>W38</td><td>in_</td><td>in (on/to/into/upon/over/against/completely)</td></tr>
+<tr><td>W39</td><td>em_</td><td>in (completely/to)</td></tr>
+<tr><td>W40</td><td>en_</td><td>in (completely/to)</td></tr>
+<tr><td>W41</td><td>_en</td><td>made of/to make</td></tr>
+<tr><td>W42</td><td>_fy/ify</td><td>to make/to become</td></tr>
+<tr><td>W43</td><td>derm/derma/dermato</td><td>skin</td></tr>
+<tr><td>W44</td><td>dem/demo</td><td>people (mob)</td></tr>
+<tr><td>W45</td><td>demon/demono</td><td>demon (devil/evil spirit)</td></tr>
+<tr><td>W46</td><td>caco</td><td>bad (abnormal/evil)</td></tr>
+<tr><td>W47</td><td>maniac</td><td>insane person (person who is crazy about something/someone)</td></tr>
+<tr><td>W48</td><td>_mania</td><td>madness (insanity/craze for someone/something)</td></tr>
+<tr><td>W49</td><td>centr/center</td><td>center</td></tr>
+<tr><td>W50</td><td>uni</td><td>one</td></tr>
+<tr><td>W51</td><td>mono</td><td>one (single)</td></tr>
+<tr><td>W52</td><td>bi_</td><td>two (every two)</td></tr>
+<tr><td>W53</td><td>tri_</td><td>three (every three)</td></tr>
+<tr><td>W54</td><td>pent/penta</td><td>five</td></tr>
+<tr><td>W55</td><td>poly</td><td>many (much)</td></tr>
+<tr><td>W56</td><td>mult/multi</td><td>many (much)</td></tr>
+<tr><td>W57</td><td>crat</td><td>govern (rule/power)</td></tr>
+<tr><td>W58</td><td>_cracy</td><td>governed by (ruled by/government by)</td></tr>
+<tr><td>W59</td><td>ad_</td><td>to/toward (against)</td></tr>
+<tr><td>W60</td><td>re_</td><td>again (back/against)</td></tr>
+<tr><td>W61</td><td>retro_</td><td>back (backward/behind/location)</td></tr>
+<tr><td>W62</td><td>ante_</td><td>before (time/place)/front (location)</td></tr>
+<tr><td>W63</td><td>fore_</td><td>before/in front</td></tr>
+<tr><td>W64</td><td>pre</td><td>before (beforehand)</td></tr>
+<tr><td>W65</td><td>ex-</td><td>former (past)</td></tr>
+<tr><td>W66</td><td>e/ex_</td><td>out (out of/away/completely/off/up)</td></tr>
+<tr><td>W67</td><td>eu_</td><td>good (well/ pleasing/ normal)</td></tr>
+<tr><td>W68</td><td>mal_</td><td>bad/poor (badly/poorly/evil)</td></tr>
+<tr><td>W69</td><td>con_</td><td>with/together (completely)</td></tr>
+<tr><td>W70</td><td>co_</td><td>with/together</td></tr>
+<tr><td>W71</td><td>auto</td><td>self</td></tr>
+<tr><td>W72</td><td>ego</td><td>I (self)</td></tr>
+<tr><td>W73</td><td>egot</td><td>I (my/me)</td></tr>
+<tr><td>W74</td><td>seism/seismo/sismo</td><td>quake (shake/earthquake)</td></tr>
+<tr><td>W75</td><td>sub_</td><td>under/below (up/near/down/partly/in place of)</td></tr>
+<tr><td>W76</td><td>oid</td><td>resembling (like)</td></tr>
+<tr><td>W77</td><td>lateral</td><td>side</td></tr>
+<tr><td>W78</td><td>gastr/gastro</td><td>stomach</td></tr>
+<tr><td>W79</td><td>hepat/hepato</td><td>liver</td></tr>
+<tr><td>W80</td><td>therap/therapy</td><td>treatment</td></tr>
+<tr><td>W81</td><td>ot/oto</td><td>ear</td></tr>
+<tr><td>W82</td><td>card/cardi/cardio</td><td>heart</td></tr>
+<tr><td>W83</td><td>encephal/encephalo</td><td>brain</td></tr>
+<tr><td>W84</td><td>cephal/cephalo/cephaly</td><td>head</td></tr>
+<tr><td>W85</td><td>moiph/morpho/morphy</td><td>shape (form/structure)</td></tr>
+<tr><td>W86</td><td>micro</td><td>small</td></tr>
+<tr><td>W87</td><td>dyna/dynam/dynamo</td><td>power (force/energy)</td></tr>
+<tr><td>W88</td><td>potent</td><td>power (having power/energy/force)</td></tr>
+<tr><td>W89</td><td>tox/toxi/toxico/toxo</td><td>poison</td></tr>
+<tr><td>W90</td><td>hydr/hvdro</td><td>water (liquid)</td></tr>
+<tr><td>W91</td><td>due/duce/duct</td><td>lead</td></tr>
+<tr><td>W92</td><td>ced/cede/ceed</td><td>go (yield)</td></tr>
+<tr><td>W93</td><td>grad/gradi/gradu</td><td>step (go/walk)</td></tr>
+<tr><td>W94</td><td>pyr/pyro</td><td>fire (heat)</td></tr>
+<tr><td>W95</td><td>lith/litho</td><td>stone (rock)</td></tr>
+<tr><td>W96</td><td>chrom/chroma/chrome/chromo/chromato</td><td>color</td></tr>
+<tr><td>W97</td><td>therm/thermo</td><td>heat</td></tr>
+<tr><td>W98</td><td>_gen</td><td>produce/producing (creating/developing)</td></tr>
+<tr><td>W99</td><td>_genous</td><td>producing/giving birth/creating</td></tr>
+<tr><td>W100</td><td>_geny</td><td>production of(creation/ giving birth to/development)</td></tr>
+<tr><td>W101</td><td>genesis</td><td>origin of (creation/production/source/birth of)</td></tr>
+<tr><td>W102</td><td>gene/geno/genit/gener</td><td>race/ kind (birth of/origin)</td></tr>
+<tr><td>W103</td><td>gam/gamy</td><td>marriage</td></tr>
+<tr><td>W104</td><td>gyn/gynv/gyneco</td><td>woman (wife)</td></tr>
+<tr><td>W105</td><td>andr/andro/andry</td><td>man (husband)</td></tr>
+<tr><td>W106</td><td>aristo</td><td>elite (noble class/ top class)</td></tr>
+<tr><td>W107</td><td>pluto</td><td>wealth (rich)</td></tr>
+<tr><td>W108</td><td>ultra</td><td>extreme (beyond/excess)</td></tr>
+<tr><td>W109</td><td>bureau</td><td>department</td></tr>
+<tr><td>W110</td><td>_phile</td><td>person who loves (lover of/fond of)</td></tr>
+<tr><td>W111</td><td>_phobe</td><td>person who fears/one who fears</td></tr>
+<tr><td>W112</td><td>phob</td><td>extreme fear of</td></tr>
+<tr><td>W113</td><td>phobia</td><td>extreme fear of (condition of)</td></tr>
+<tr><td>W114</td><td>neo</td><td>new (current)</td></tr>
+<tr><td>W115</td><td>spec/spect</td><td>look (see/appear)</td></tr>
+<tr><td>W116</td><td>tel/tele</td><td>long distance</td></tr>
+<tr><td>W117</td><td>homo</td><td>same</td></tr>
+<tr><td>W118</td><td>hetero</td><td>different (opposite)</td></tr>
+<tr><td>W119</td><td>_algia/algesia</td><td>pain (ache)</td></tr>
+<tr><td>W120</td><td>alg/alge/alges/algo</td><td>pain (ache)</td></tr>
+<tr><td>WB</td><td>chron/chrono</td><td>time</td></tr>
+</tbody>
+</table>
+<br />
+
+</body>
+</html>
