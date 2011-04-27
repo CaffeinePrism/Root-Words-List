@@ -9,6 +9,69 @@
 .rtable tr:hover td {background-color:#ffffc1;}
 </style>
 <script type="text/javascript" src="cssjs/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="cssjs/jquery.dataTables.min.js"></script>
+<script type="text/javascript">
+$.fn.dataTableExt.afnFiltering.push(
+	function( oSettings, aData, iDataIndex ) {
+		var iMin = (document.getElementById('min').value * 1);
+		var iMax = (document.getElementById('max').value * 1);
+		var iVersion = aData[0] == "W" ? 0 : aData[0]*1;
+		if ( iMin == "" && iMax == "" )
+		{
+			return true;
+		}
+		else if ( iMin - 1 == "" && iVersion < iMax + 1 )
+		{
+			return true;
+		}
+		else if ( iMin - 1 < iVersion && "" == iMax)
+		{
+			return true;
+		}
+		else if ( iMin - 1 < iVersion && iVersion < iMax + 1 )
+		{
+			return true;
+		}
+		return false;
+	}
+);
+
+jQuery.fn.dataTableExt.oSort['anti-unds-asc'] = function(a,b) {
+	var x = a.replace(/_/, "");
+	var y = b.replace(/_/, "");
+	return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+};
+
+jQuery.fn.dataTableExt.oSort['anti-unds-desc'] = function(a,b) {
+	var x = a.replace(/_/, "");
+	var y = b.replace(/_/, "");
+	return ((x < y) ? 1 : ((x > y) ? -1 : 0));
+};
+
+$(document).ready(function() 
+    { 
+        $("#rlist3").dataTable( {
+			"aaSorting": [[ 1, "asc" ]],
+			"aoColumnDefs": [
+				{ "sType": "anti-unds-asc", "aTargets": 1 }
+			],
+			"bAutoWidth": false,
+			"iDisplayLength": -1,
+			"oLanguage": {
+				"sLengthMenu": 'Display <select>'+
+				'<option value="10">10</option>'+
+				'<option value="25">25</option>'+
+				'<option value="50">50</option>'+
+				'<option value="100">100</option>'+
+				'<option value="-1">All</option>'+
+				'</select> entries'
+			}
+		} );
+		var oTable = $('#rlist3').dataTable();
+		$('#min').keyup( function() { oTable.fnDraw(); } );
+		$('#max').keyup( function() { oTable.fnDraw(); } );
+	} );
+</script>
 </head><body>
 <span style="font-size:10px; padding-left:10px; background:#E26464; border:1px solid #EBF6F9; overflow:hidden;">&nbsp;</span> = List 1<br />
 <span style="font-size:10px; padding-left:10px; background:#64CBE2; border:1px solid #EBF6F9; overflow:hidden;">&nbsp;</span> = List 2<br />
