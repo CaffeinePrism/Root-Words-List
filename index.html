@@ -1,77 +1,49 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset='utf-8'>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>Root Words Lists 1 + 2</title>
+<style type="text/css">
+.rtable {border:1px solid #42b0c9;border-bottom:0;border-right:0;margin:0;margin-left:-5px;border-collapse:collapse;width:100%;padding:4px}
+.rtable th {border:1px solid #42B0C9;background:#42B0C9;border-right:0px solid #64CBE2;color:#fff;font-size:14px;padding:3px 5px}
+.rtable td {border-bottom:1px solid #64CBE2;background:#EBF6F9;border-right:1px solid #64CBE2;padding:3px 5px}
+.rtable .white td {border-bottom:1px solid #E26464;background:#F9EBEB;border-right:1px solid #E26464;border-left:1px solid #E26464;padding:3px 5px}
+.rtable tr:hover td {background-color:#ffffc1;}
+</style>
+<script type="text/javascript" src="cssjs/jquery-1.5.min.js"></script>
+</head><body>
+<span style="font-size:10px; padding-left:10px; background:#E26464; border:1px solid #EBF6F9; overflow:hidden;">&nbsp;</span> = List 1<br />
+<span style="font-size:10px; padding-left:10px; background:#64CBE2; border:1px solid #EBF6F9; overflow:hidden;">&nbsp;</span> = List 2<br />
+Show: 
+<input type="checkbox" name="one" id="box1" onclick="$('#one').toggle();" checked="true" />List One 
+<input type="checkbox" name="two" id="box2" onclick="$('#two').toggle();" checked="true" />List Two
 
-  <title>CaffeinePrism/Root-Words-List @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #fff;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #61ac53; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #61ac53; }
-    h3 { text-align: center; color: #61ac53; }
-    a { color: #61ac53; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-</head>
-
-<body>
-  <a href="http://github.com/CaffeinePrism/Root-Words-List"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="http://github.com/CaffeinePrism/Root-Words-List/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/CaffeinePrism/Root-Words-List/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="http://github.com/CaffeinePrism/Root-Words-List">Root-Words-List</a>
-      <span class="small">by <a href="http://github.com/CaffeinePrism">CaffeinePrism</a></span></h1>
-
-    <div class="description">
-      Scanned and OCR'd list containing several hundred root words from a high school English class.
-    </div>
-
-    <h2>Authors</h2>
-<p>Richard Li (nontextual@gmail.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p> (nontextual@gmail.com)<br/>      </p>
-
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/CaffeinePrism/Root-Words-List/zipball/master">zip</a> or
-      <a href="http://github.com/CaffeinePrism/Root-Words-List/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/CaffeinePrism/Root-Words-List</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/CaffeinePrism/Root-Words-List">CaffeinePrism/Root-Words-List</a>
-    </div>
-
-  </div>
-
-  
+<!-- TODO: 
+* Add 3 filtering options: first list, second list only, show both (default to both) 
+* Possible quiz system?
+* images -> base64 encoded?
+-->
+<br />
+<br />
+<table class="rtable">
+	<thead>
+		<tr><th>#</th><th>Root</th><th>Definition</th></tr>
+	</thead>
+	
+	<tbody id="two"></tbody>
+	<tbody id="one" class="white"></tbody>
+</table>
+<br />
+		<script type="text/javascript">
+			// Load JSON file
+			$.getJSON('list.json', function(data) {
+				//List one
+				$.each(data.listone, function(i,item){
+					$("#one").append("<tr><td>" + item.number + "</td><td>" + item.root + "</td><td>" + item.definition + "</td></tr>");
+				});
+				// List two
+				$.each(data.listtwo, function(i,item){
+					$("#two").append("<tr><td>" + item.number + "</td><td>" + item.root + "</td><td>" + item.definition + "</td></tr>");
+				});
+			})
+		</script>
 </body>
 </html>
