@@ -9,7 +9,41 @@
 .rtable tr:hover td {background-color:#ffffc1;}
 </style>
 <script type="text/javascript" src="cssjs/jquery-1.5.min.js"></script>
-<script type="text/javascript" src="cssjs/jquery.dataTables.min.js"></script>
+</head><body>
+<span style="font-size:10px; padding-left:10px; background:#E26464; border:1px solid #EBF6F9; overflow:hidden;">&nbsp;</span> = List 1<br />
+<span style="font-size:10px; padding-left:10px; background:#64CBE2; border:1px solid #EBF6F9; overflow:hidden;">&nbsp;</span> = List 2<br />
+Show: 
+<input type="checkbox" name="one" id="box1" onclick="$('.one').toggle();" checked="true" />List One 
+<input type="checkbox" name="two" id="box2" onclick="$('.atwo').toggle();" checked="true" />List Two<br />
+Limit to numbers <input type="text" id="min" name="min" size="4" /> to <input type="text" id="max" name="max" size="4" />
+<!-- TODO: 
+* Add 3 filtering options: first list, second list only, show both (default to both) 
+* Possible quiz system?
+* images -> base64 encoded?
+-->
+<br />
+<br />
+<table id="rlist3" class="rtable">
+	<thead>
+		<tr><th>#</th><th>Root</th><th>Definition</th></tr>
+	</thead>
+	<tbody id="two">
+</table>
+<br />
+		<script type="text/javascript">
+			// Load JSON file
+			$.getJSON('list.json', function(data) {
+				//List one
+				$.each(data.listone, function(i,item){
+					$("#two").append("<tr class='white one'><td>" + item.number + "</td><td>" + item.root + "</td><td>" + item.definition + "</td></tr>");
+				});
+				// List two
+				$.each(data.listtwo, function(i,item){
+					$("#two").append("<tr class='atwo'><td>" + item.number + "</td><td>" + item.root + "</td><td>" + item.definition + "</td></tr>");
+				});
+			})
+		</script>
+		<script type="text/javascript" src="cssjs/jquery.dataTables.js"></script>
 <script type="text/javascript">
 $.fn.dataTableExt.afnFiltering.push(
 	function( oSettings, aData, iDataIndex ) {
@@ -35,7 +69,12 @@ $.fn.dataTableExt.afnFiltering.push(
 		return false;
 	}
 );
-
+	function sleep(ms)
+	{
+		var dt = new Date();
+		dt.setTime(dt.getTime() + ms);
+		while (new Date().getTime() < dt.getTime());
+	}
 jQuery.fn.dataTableExt.oSort['anti-unds-asc'] = function(a,b) {
 	var x = a.replace(/_/, "");
 	var y = b.replace(/_/, "");
@@ -49,8 +88,9 @@ jQuery.fn.dataTableExt.oSort['anti-unds-desc'] = function(a,b) {
 };
 
 $(document).ready(function() 
-    { 
-        $("#list").dataTable( {
+    {
+		sleep(1000);
+        $("#rlist3").dataTable( {
 			"aaSorting": [[ 1, "asc" ]],
 			"aoColumnDefs": [
 				{ "sType": "anti-unds-asc", "aTargets": 1 }
@@ -67,46 +107,11 @@ $(document).ready(function()
 				'</select> entries'
 			}
 		} );
-		var oTable = $('#list').dataTable();
+		var oTable = $('#rlist3').dataTable();
 		$('#min').keyup( function() { oTable.fnDraw(); } );
 		$('#max').keyup( function() { oTable.fnDraw(); } );
+		$('#rlist3').dataTable();
 	} );
 </script>
-</head><body>
-<span style="font-size:10px; padding-left:10px; background:#E26464; border:1px solid #EBF6F9; overflow:hidden;">&nbsp;</span> = List 1<br />
-<span style="font-size:10px; padding-left:10px; background:#64CBE2; border:1px solid #EBF6F9; overflow:hidden;">&nbsp;</span> = List 2<br />
-Show: 
-<input type="checkbox" name="one" id="box1" onclick="$('#one').toggle();" checked="true" />List One 
-<input type="checkbox" name="two" id="box2" onclick="$('#two').toggle();" checked="true" />List Two<br />
-Limit to numbers <input type="text" id="min" name="min" size="4" /> to <input type="text" id="max" name="max" size="4" />
-<!-- TODO: 
-* Add 3 filtering options: first list, second list only, show both (default to both) 
-* Possible quiz system?
-* images -> base64 encoded?
--->
-<br />
-<br />
-<table class="rtable" id="list">
-	<thead>
-		<tr><th>#</th><th>Root</th><th>Definition</th></tr>
-	</thead>
-	
-	<tbody id="two"></tbody>
-	<tbody id="one" class="white"></tbody>
-</table>
-<br />
-		<script type="text/javascript">
-			// Load JSON file
-			$.getJSON('list.json', function(data) {
-				//List one
-				$.each(data.listone, function(i,item){
-					$("#one").append("<tr><td>" + item.number + "</td><td>" + item.root + "</td><td>" + item.definition + "</td></tr>");
-				});
-				// List two
-				$.each(data.listtwo, function(i,item){
-					$("#two").append("<tr><td>" + item.number + "</td><td>" + item.root + "</td><td>" + item.definition + "</td></tr>");
-				});
-			})
-		</script>
 </body>
 </html>
