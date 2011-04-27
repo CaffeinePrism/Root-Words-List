@@ -50,7 +50,7 @@ jQuery.fn.dataTableExt.oSort['anti-unds-desc'] = function(a,b) {
 
 $(document).ready(function() 
     { 
-        $("#rlist3").dataTable( {
+        $("#list").dataTable( {
 			"aaSorting": [[ 1, "asc" ]],
 			"aoColumnDefs": [
 				{ "sType": "anti-unds-asc", "aTargets": 1 }
@@ -67,7 +67,7 @@ $(document).ready(function()
 				'</select> entries'
 			}
 		} );
-		var oTable = $('#rlist3').dataTable();
+		var oTable = $('#list').dataTable();
 		$('#min').keyup( function() { oTable.fnDraw(); } );
 		$('#max').keyup( function() { oTable.fnDraw(); } );
 	} );
@@ -77,8 +77,8 @@ $(document).ready(function()
 <span style="font-size:10px; padding-left:10px; background:#64CBE2; border:1px solid #EBF6F9; overflow:hidden;">&nbsp;</span> = List 2<br />
 Show: 
 <input type="checkbox" name="one" id="box1" onclick="$('#one').toggle();" checked="true" />List One 
-<input type="checkbox" name="two" id="box2" onclick="$('#two').toggle();" checked="true" />List Two
-
+<input type="checkbox" name="two" id="box2" onclick="$('#two').toggle();" checked="true" />List Two<br />
+Limit to numbers <input type="text" id="min" name="min" size="4" /> to <input type="text" id="max" name="max" size="4" />
 <!-- TODO: 
 * Add 3 filtering options: first list, second list only, show both (default to both) 
 * Possible quiz system?
@@ -86,7 +86,7 @@ Show:
 -->
 <br />
 <br />
-<table class="rtable">
+<table class="rtable" id="list">
 	<thead>
 		<tr><th>#</th><th>Root</th><th>Definition</th></tr>
 	</thead>
