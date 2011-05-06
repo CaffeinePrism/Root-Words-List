@@ -2,6 +2,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head><title>Root Words Lists 1 + 2</title>
 <style type="text/css">
+.sorting_asc {
+	background: url('images/sort_asc.png') no-repeat center right #42b0c9;
+}
+
+.sorting_desc {
+	background: url('images/sort_desc.png') no-repeat center right #42b0c9;
+}
+
+.sorting {
+	background: url('images/sort_both.png') no-repeat center right #42b0c9;
+}
+
+.sorting_asc_disabled {
+	background: url('images/sort_asc_disabled.png') no-repeat center right #42b0c9;
+}
+
+.sorting_desc_disabled {
+	background: url('images/sort_desc_disabled.png') no-repeat center right #42b0c9;
+}
+
 .rtable {border:1px solid #42b0c9;border-bottom:0;border-right:0;margin:0;margin-left:-5px;border-collapse:collapse;width:100%;padding:4px}
 .rtable th {border:1px solid #42B0C9;background:#42B0C9;border-right:0px solid #64CBE2;color:#fff;font-size:14px;padding:3px 5px}
 .rtable td {border-bottom:1px solid #64CBE2;background:#EBF6F9;border-right:1px solid #64CBE2;padding:3px 5px}
@@ -9,6 +29,7 @@
 .rtable tr:hover td {background-color:#ffffc1;}
 </style>
 <script type="text/javascript" src="cssjs/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="cssjs/jquery.dataTables.js"></script>
 </head><body>
 <span style="font-size:10px; padding-left:10px; background:#E26464; border:1px solid #EBF6F9; overflow:hidden;">&nbsp;</span> = List 1<br />
 <span style="font-size:10px; padding-left:10px; background:#64CBE2; border:1px solid #EBF6F9; overflow:hidden;">&nbsp;</span> = List 2<br />
@@ -43,7 +64,6 @@ Limit to numbers <input type="text" id="min" name="min" size="4" /> to <input ty
 				});
 			})
 		</script>
-		<script type="text/javascript" src="cssjs/jquery.dataTables.js"></script>
 <script type="text/javascript">
 $.fn.dataTableExt.afnFiltering.push(
 	function( oSettings, aData, iDataIndex ) {
@@ -76,14 +96,14 @@ $.fn.dataTableExt.afnFiltering.push(
 		while (new Date().getTime() < dt.getTime());
 	}
 jQuery.fn.dataTableExt.oSort['anti-unds-asc'] = function(a,b) {
-	var x = a.replace(/_/, "");
-	var y = b.replace(/_/, "");
+	var x = a.replace(/^_/i, "");
+	var y = b.replace(/^_/i, "");
 	return ((x < y) ? -1 : ((x > y) ? 1 : 0));
 };
 
 jQuery.fn.dataTableExt.oSort['anti-unds-desc'] = function(a,b) {
-	var x = a.replace(/_/, "");
-	var y = b.replace(/_/, "");
+	var x = a.replace(/^_/i, "");
+	var y = b.replace(/^_/i, "");
 	return ((x < y) ? 1 : ((x > y) ? -1 : 0));
 };
 
