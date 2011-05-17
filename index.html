@@ -116,7 +116,7 @@ $(document).ready(function()
 				$.each(data.listtwo, function(i,item){
 					$("#two").append("<tr class='atwo'><td>" + item.number + "</td><td>" + item.root + "</td><td>" + item.definition + "</td></tr>");
 				});
-			$("#rlist").dataTable( {
+			var oTable = $("#rlist").dataTable( {
 			"aaSorting": [[ 1, "asc" ]],
 			"aoColumnDefs": [
 				{ "sType": "anti-unds-asc", "aTargets": 1 }
@@ -132,11 +132,12 @@ $(document).ready(function()
 				'<option value="-1">All</option>'+
 				'</select> entries'
 			}
-		} );})
+		} );
 		sleep(1000);
-		var oTable = $('#rlist3').dataTable();
+		var oTable = $('#rlist').dataTable();
 		$('#min').keyup( function() { oTable.fnDraw(); } );
 		$('#max').keyup( function() { oTable.fnDraw(); } );
+		})
 	} );
 </script>
 </head><body>
