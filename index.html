@@ -123,6 +123,7 @@ $(document).ready(function()
 			],
 			"bAutoWidth": false,
 			"iDisplayLength": -1,
+			"oSearch": {"sSearch": "", "bRegex": true, "bSmart": true },
 			"oLanguage": {
 				"sLengthMenu": 'Display <select>'+
 				'<option value="10">10</option>'+
@@ -137,6 +138,7 @@ $(document).ready(function()
 		var oTable = $('#rlist').dataTable();
 		$('#min').keyup( function() { oTable.fnDraw(); } );
 		$('#max').keyup( function() { oTable.fnDraw(); } );
+		//oTable.fnFilter('^(1|21|13)$',0,true);
 		})
 	} );
 </script>
