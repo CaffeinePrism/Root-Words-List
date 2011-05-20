@@ -59,8 +59,9 @@ background:url('images/sort_asc_disabled.png') no-repeat center right #42b0c9;
 background:url('images/sort_desc_disabled.png') no-repeat center right #42b0c9;
 }
 </style>
+<script type="text/javascript" src="cssjs/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="cssjs/jquery.dataTables.min.js"></script>
 <script type="text/javascript">
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-23467028-1']);
   _gaq.push(['_trackPageview']);
@@ -71,10 +72,6 @@ background:url('images/sort_desc_disabled.png') no-repeat center right #42b0c9;
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
-<script type="text/javascript" src="cssjs/jquery-1.5.min.js"></script>
-<script type="text/javascript" src="cssjs/jquery.dataTables.min.js"></script>
-<script type="text/javascript">
 $.fn.dataTableExt.afnFiltering.push(
 	function( oSettings, aData, iDataIndex ) {
 		var iMin = (document.getElementById('min').value * 1);
