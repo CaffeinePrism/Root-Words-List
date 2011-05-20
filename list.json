@@ -2041,6 +2041,16 @@
             "number": "120",
             "root": "alg/alge/alges/algo",
             "definition": "pain (ache)" 
-        } 
+        },
+		{
+            "number": "999",
+            "root": "arid",
+            "definition": "dry" 
+        },
+		{
+            "number": "998",
+            "root": "chron/chrono",
+            "definition": "time" 
+        },
     ]
 }
