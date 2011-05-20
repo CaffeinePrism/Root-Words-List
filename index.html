@@ -62,16 +62,6 @@ background:url('images/sort_desc_disabled.png') no-repeat center right #42b0c9;
 <script type="text/javascript" src="cssjs/jquery-1.5.min.js"></script>
 <script type="text/javascript" src="cssjs/jquery.dataTables.min.js"></script>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-23467028-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
 $.fn.dataTableExt.afnFiltering.push(
 	function( oSettings, aData, iDataIndex ) {
 		var iMin = (document.getElementById('min').value * 1);
@@ -150,6 +140,15 @@ $(document).ready(function()
 		$('#max').keyup( function() { oTable.fnDraw(); } );
 		//oTable.fnFilter('^(1|21|13)$',0,true);
 		})
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-23467028-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
 	} );
 </script>
 </head><body>
