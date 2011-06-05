@@ -150,6 +150,9 @@ $(document).ready(function()
 		//oTable.fnFilter('^(1|21|13)$',0,true);
 		})
 	});
+function filter(regex,column) {
+	$('#rlist').dataTable().fnFilter(regex,column,true);
+}
 </script>
 </head><body>
 <span style="font-size:10px; padding-left:10px; background:#E26464; border:1px solid #EBF6F9; overflow:hidden;">&nbsp;</span> = List 1<br />
@@ -158,8 +161,9 @@ Show:
 <input type="checkbox" name="one" id="box1" onclick="$('.one').toggle();" checked="true" />List One 
 <input type="checkbox" name="two" id="box2" onclick="$('.atwo').toggle();" checked="true" />List Two<br />
 Only show list(s):
-<input type="radio" onclick="$('#rlist').dataTable().fnFilter('',0,true);" />All&nbsp;
-<input type="radio" onclick="$('#rlist').dataTable().fnFilter('^(16[5-6]|170|17[4-5]|179|180|18[2-3]|19[6-9]|20[0-4])$',0,true);" />10<br /><br />
+<input type="radio" name="filter" onclick="filter('',0);" />All&nbsp;
+<input type="radio" name="filter" onclick="filter('^(16[5-6]|170|17[4-5]|179|180|18[2-3]|19[6-9]|20[0-4])$',0);" />10&nbsp;
+<input type="radio" name="filter" onclick="filter('^(14[2-9]|15[0-9]|16[0-3])$',0);" />1(ii)&nbsp;<br /><br />
 Limit to numbers <input type="text" id="min" name="min" size="4" /> to <input type="text" id="max" name="max" size="4" />
 <!-- TODO: 
 * Add 3 filtering options: first list, second list only, show both (default to both) 
