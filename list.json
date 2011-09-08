@@ -777,7 +777,7 @@
         },
         {
             "number": "156",
-            "root": "fits/fuse",
+            "root": "fus/fuse",
             "definition": "pour (melt/spread)" 
         },
         {
